@@ -1,0 +1,168 @@
+.container, #nav {
+  padding: 0 2.5vw;
+}
+
+#nav {
+  background-color: #000000;
+  width: 100%;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav .logo-container {
+  min-width: 4vw;
+  max-width: 45px;
+  width: 30vw;
+  cursor: pointer;
+}
+
+#nav .logo-img {
+  width: 100%;
+  display: block;
+}
+
+#nav .menu-container {
+  width: 40px;
+  height: 28px;
+  cursor: pointer;
+}
+
+#nav .menu-icon {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#nav .menu-line {
+  height: 2px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#nav .menu-line:first-child {
+  width: 80%;
+}
+
+#nav .menu-line:last-child {
+  width: 90%;
+}
+
+#nav .menu-container:hover .menu-line {
+  width: 100%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#nav .menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #f1f1f1;
+  -webkit-animation-name: slideFromTop;
+          animation-name: slideFromTop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+#nav .menu button {
+  padding: 10px 25px;
+}
+
+#nav .transitioned-menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#nav .transitioned-menu .menu-line:first-child {
+  width: 0%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#nav .transitioned-menu .menu-line:nth-child(2) {
+  width: 0%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#nav .transitioned-menu .menu-line:last-child {
+  width: 0%;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+@-webkit-keyframes slideFromTop {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #nav .menu-container {
+    width: 35px;
+    height: 20px;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */
