@@ -77,27 +77,6 @@
   transition: all .3s ease-in-out;
 }
 
-#nav .menu {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  background-color: #f1f1f1;
-  -webkit-animation-name: slideFromTop;
-          animation-name: slideFromTop;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
-#nav .menu button {
-  padding: 10px 25px;
-}
-
 #nav .transitioned-menu {
   height: 100%;
   display: -webkit-box;
@@ -131,6 +110,62 @@
   width: 0%;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
+}
+
+#nav .menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #f1f1f1;
+  -webkit-animation-name: slideFromTop;
+          animation-name: slideFromTop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+#nav .menu .x-icon {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav .x-line {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  background-color: #000;
+}
+
+#nav .x-line:first-child {
+  -webkit-transform: rotate(45deg) translate(0, 0);
+          transform: rotate(45deg) translate(0, 0);
+}
+
+#nav .x-line:last-child {
+  -webkit-transform: rotate(135deg) translate(0, 0);
+          transform: rotate(135deg) translate(0, 0);
 }
 
 @-webkit-keyframes slideFromTop {

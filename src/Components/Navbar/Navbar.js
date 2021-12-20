@@ -24,12 +24,15 @@ const Navbar = () => {
                 {
                     open?
                     <div className="menu">
-                        <button onClick={toggleOpen}>X</button>
-                    <ul>
-                        <li>Leader</li>
-                        <li>Leader</li>
-                        <li>Leader</li>
-                    </ul>
+                        <div className="x-icon" onClick={toggleOpen}>
+                            <div className="x-line"></div>
+                            <div className="x-line"></div>
+                        </div>
+                        <ul>
+                            <li>Leader</li>
+                            <li>Leader</li>
+                            <li>Leader</li>
+                        </ul>
                     </div>
                     : null
                 }

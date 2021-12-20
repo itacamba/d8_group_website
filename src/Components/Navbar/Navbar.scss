@@ -61,23 +61,7 @@
     transition: all .3s ease-in-out; // full width on hover/on
   }
 
-  .menu {
-    width: 100%;
-    position: fixed;
-    top:0;
-    right:0;
-    height: 100vh;
-    background-color: #f1f1f1;
-    animation-name: slideFromTop;
-    animation-duration: 1s;
-    animation-fill-mode: backwards;
-    animation-delay: .5s;
-  }
-  .menu button{
-    padding: 10px 25px;
-  }
-
-  .transitioned-menu {
+  .transitioned-menu { // this is a clone of menu-icon
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -98,6 +82,46 @@
   .transitioned-menu .menu-line:last-child{
     width: 0%;
     transition: all .6s ease-in-out;
+  }
+
+  .menu {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    background-color: #f1f1f1;
+    animation-name: slideFromTop;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: .5s;
+  }
+  .menu .x-icon{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .x-line{
+    width: 30px;
+    height: 2px;
+    position:absolute;
+    background-color: #000;
+  }
+
+  .x-line:first-child{
+    transform: rotate(45deg) translate(0,0);
+  }
+
+  .x-line:last-child{
+    transform: rotate(135deg) translate(0,0);
   }
 
   @keyframes slideFromTop {
