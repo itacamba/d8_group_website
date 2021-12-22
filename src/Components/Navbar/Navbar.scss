@@ -61,7 +61,7 @@
     transition: all .3s ease-in-out; // full width on hover/on
   }
 
-  .transitioned-menu { // this is a clone of menu-icon
+  .transitioned-menu { // this is a clone of menu-icon that includes children animation below
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -96,10 +96,10 @@
     animation-fill-mode: backwards;
     animation-delay: .5s;
   }
-  .menu .x-icon{
+
+  .x-icon{
     width: 40px;
     height: 40px;
-    background-color: red;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -110,18 +110,65 @@
   }
 
   .x-line{
-    width: 30px;
+    width: 40px;
     height: 2px;
-    position:absolute;
+    position:absolute; // makes sure both lines start at the same position(0,0)
     background-color: #000;
   }
 
   .x-line:first-child{
-    transform: rotate(45deg) translate(0,0);
+    animation-name: rotateRight;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
   }
 
   .x-line:last-child{
-    transform: rotate(135deg) translate(0,0);
+    animation-name: rotateLeft;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+  }
+
+  .test{
+    width: 100%;
+    position: fixed;
+    top:50;
+    left:50;
+    height: 100vh;
+    background-color: #862121;
+
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .other {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    background-color: #f1f1f1;
+    animation-name: test;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+  }
+
+  .other .x-line:first-child{
+    animation-name: rotateRight;
+    animation-direction: reverse;
+    animation-duration: 1.5s;
+    animation-fill-mode: backwards;
+  }
+  
+  .other .x-line:last-child{
+    animation-name: rotateLeft;
+    animation-direction: reverse;
+    animation-duration: 1.5s;
+    animation-fill-mode: backwards;
   }
 
   @keyframes slideFromTop {
@@ -131,6 +178,36 @@
   
     to {
       transform: translateY(0);
+    }
+  }
+
+  @keyframes test {
+    from {
+      transform: translateY(0);
+    }
+
+    to {
+      transform: translateY(-100%);
+    }
+  }
+
+  @keyframes rotateRight {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(45deg);
+    }
+  }
+
+  @keyframes rotateLeft {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(135deg);
     }
   }
 }

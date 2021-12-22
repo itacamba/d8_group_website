@@ -6,8 +6,18 @@ const Navbar = () => {
 
     const [open, setOpen] = useState(false);
 
+    const [dina, setDina] = useState('hide')
+
+    
     const toggleOpen = () => {
-       setOpen(!open) 
+        const currentState = !open
+        if(!currentState){
+            console.log('closed');
+            setDina('other')
+        } else {
+            setDina('hide')
+        }
+        setOpen(currentState) 
     }
 
     return (
@@ -21,9 +31,7 @@ const Navbar = () => {
                     <div className="menu-line"></div>
                     <div className="menu-line"></div>
                 </div>
-                {
-                    open?
-                    <div className="menu">
+                    <div className={open? "menu" : dina}>
                         <div className="x-icon" onClick={toggleOpen}>
                             <div className="x-line"></div>
                             <div className="x-line"></div>
@@ -34,8 +42,6 @@ const Navbar = () => {
                             <li>Leader</li>
                         </ul>
                     </div>
-                    : null
-                }
             </div>
         </nav>
     );

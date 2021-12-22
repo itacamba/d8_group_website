@@ -129,10 +129,9 @@
           animation-delay: .5s;
 }
 
-#nav .menu .x-icon {
+#nav .x-icon {
   width: 40px;
   height: 40px;
-  background-color: red;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -152,20 +151,82 @@
 }
 
 #nav .x-line {
-  width: 30px;
+  width: 40px;
   height: 2px;
   position: absolute;
   background-color: #000;
 }
 
 #nav .x-line:first-child {
-  -webkit-transform: rotate(45deg) translate(0, 0);
-          transform: rotate(45deg) translate(0, 0);
+  -webkit-animation-name: rotateRight;
+          animation-name: rotateRight;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 #nav .x-line:last-child {
-  -webkit-transform: rotate(135deg) translate(0, 0);
-          transform: rotate(135deg) translate(0, 0);
+  -webkit-animation-name: rotateLeft;
+          animation-name: rotateLeft;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+#nav .test {
+  width: 100%;
+  position: fixed;
+  top: 50;
+  left: 50;
+  height: 100vh;
+  background-color: #862121;
+}
+
+#nav .hide {
+  display: none;
+}
+
+#nav .other {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #f1f1f1;
+  -webkit-animation-name: test;
+          animation-name: test;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+#nav .other .x-line:first-child {
+  -webkit-animation-name: rotateRight;
+          animation-name: rotateRight;
+  animation-direction: reverse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+#nav .other .x-line:last-child {
+  -webkit-animation-name: rotateLeft;
+          animation-name: rotateLeft;
+  animation-direction: reverse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 @-webkit-keyframes slideFromTop {
@@ -187,6 +248,72 @@
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes test {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes test {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes rotateRight {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes rotateRight {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes rotateLeft {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+
+@keyframes rotateLeft {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
   }
 }
 
