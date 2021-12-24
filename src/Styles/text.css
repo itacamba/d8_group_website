@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=text.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap");
+.primary-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+/*# sourceMappingURL=text.css.map */

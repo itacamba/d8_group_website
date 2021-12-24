@@ -1,21 +1,48 @@
 import React, { useState } from 'react';
 import Logo from '../../Images/logo.png'
+import BurgerIcon from './Components/BurgerIcon';
+import XIcon from './Components/XIcon';
+import { Link } from "react-router-dom";
 import './Navbar.css'
 
 const Navbar = () => {
 
+    const pages = [
+        {
+            name: 'Home',
+            url: '/'
+        },
+        {
+            name: 'About',
+            url: '/about'
+        },
+        {
+            name: 'Leadership',
+            url: '/leadership'
+        },
+        {
+            name: 'Events',
+            url: '/events'
+        },
+        {
+            name: 'Podcast',
+            url: '/podcast'
+        },
+        {
+            name: 'Contact Us',
+            url: '/contact'
+        },
+    ]
+
     const [open, setOpen] = useState(false);
-
-    const [dina, setDina] = useState('hide')
-
+    const [menuAnimation, setMenuAnimation] = useState('hide')
     
-    const toggleOpen = () => {
+    const toggleOpen = () => {             
         const currentState = !open
-        if(!currentState){
-            console.log('closed');
-            setDina('other')
+        if(currentState){
+            setMenuAnimation('show')
         } else {
-            setDina('hide')
+            setMenuAnimation('disappear')
         }
         setOpen(currentState) 
     }
@@ -26,22 +53,20 @@ const Navbar = () => {
                 <img className="logo-img" src={Logo} alt="d8 group logo" />
             </div>
             <div className="menu-container">
-                <div className={open? 'transitioned-menu' :'menu-icon'} onClick={toggleOpen}>
-                    <div className="menu-line"></div>
-                    <div className="menu-line"></div>
-                    <div className="menu-line"></div>
+                <BurgerIcon open={open} toggleOpen={toggleOpen}/>
+                <div id="menu" className={`menu ${menuAnimation}`}>
+                    <XIcon toggleOpen={toggleOpen} menuAnimation={menuAnimation}/>
+                    <h1>The New Way to Win</h1>
+                    <ul>
+                        {
+                            pages.map((page,i) => <li key={i}>
+                                <Link to={page.url} onClick={toggleOpen}>
+                                    {page.name}
+                                </Link>
+                            </li>)
+                        }
+                    </ul>
                 </div>
-                    <div className={open? "menu" : dina}>
-                        <div className="x-icon" onClick={toggleOpen}>
-                            <div className="x-line"></div>
-                            <div className="x-line"></div>
-                        </div>
-                        <ul>
-                            <li>Leader</li>
-                            <li>Leader</li>
-                            <li>Leader</li>
-                        </ul>
-                    </div>
             </div>
         </nav>
     );

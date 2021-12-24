@@ -1,11 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAKA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,OAAO;CACjB",
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,OAAO;CACjB",
     "sources": [
-        "App.scss",
-        "colors.scss",
-        "text.scss",
-        "mixins.scss"
+        "App.scss"
     ],
     "names": [],
     "file": "App.css"

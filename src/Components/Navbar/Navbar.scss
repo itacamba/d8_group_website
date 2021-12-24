@@ -1,12 +1,11 @@
 @import '../../Styles/colors';
+@import '../../Styles/text';
 @import '../../Styles/App';
 
 
-
-
-#nav{
+#nav {
   @extend .container;
-  background-color: $bg-black;
+  background-color: $black;
   width: 100%;
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -61,116 +60,99 @@
     transition: all .3s ease-in-out; // full width on hover/on
   }
 
-  .transitioned-menu { // this is a clone of menu-icon that includes children animation below
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .transitioned-menu .menu-line:first-child{
+  .animate .menu-line:first-child{
     width: 0%;
     transition: all .2s ease-in-out;
   }
 
-  .transitioned-menu .menu-line:nth-child(2){
+  .animate .menu-line:nth-child(2){
     width: 0%;
     transition: all .4s ease-in-out;
   }
 
-  .transitioned-menu .menu-line:last-child{
+  .animate .menu-line:last-child{
     width: 0%;
     transition: all .6s ease-in-out;
   }
 
   .menu {
     width: 100%;
-    position: fixed;
-    top:0;
-    left:0;
-    height: 100vh;
     background-color: #f1f1f1;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    top: 0;
+  }
+
+  .menu.hide {
+    display: none;
+  }
+
+  .menu.disappear{
+    animation-name: slideToTop;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+  }
+
+  .menu.show {
     animation-name: slideFromTop;
     animation-duration: 1s;
     animation-fill-mode: backwards;
     animation-delay: .5s;
   }
 
-  .x-icon{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  .menu ul{
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .x-icon {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .x-line{
+ .x-line{
     width: 40px;
     height: 2px;
     position:absolute; // makes sure both lines start at the same position(0,0)
     background-color: #000;
   }
 
-  .x-line:first-child{
+  .x-line:first-child.show{
     animation-name: rotateRight;
     animation-duration: .3s;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
   }
 
-  .x-line:last-child{
+  .x-line:last-child.show{
     animation-name: rotateLeft;
     animation-duration: .3s;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
   }
 
-  .test{
-    width: 100%;
-    position: fixed;
-    top:50;
-    left:50;
-    height: 100vh;
-    background-color: #862121;
-
-  }
-
-  .hide {
-    display: none;
-  }
-
-  .other {
-    width: 100%;
-    position: fixed;
-    top:0;
-    left:0;
-    height: 100vh;
-    background-color: #f1f1f1;
-    animation-name: test;
-    animation-duration: 1.5s;
+  .x-line:first-child.disappear{
+    animation-name: rightToCenter;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
-    animation-delay: .5s;
   }
 
-  .other .x-line:first-child{
-    animation-name: rotateRight;
-    animation-direction: reverse;
-    animation-duration: 1.5s;
-    animation-fill-mode: backwards;
+  .x-line:last-child.disappear{
+    animation-name: leftToCenter;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
   }
+
+
   
-  .other .x-line:last-child{
-    animation-name: rotateLeft;
-    animation-direction: reverse;
-    animation-duration: 1.5s;
-    animation-fill-mode: backwards;
-  }
-
   @keyframes slideFromTop {
     from {
       transform: translateY(-100%);
@@ -181,13 +163,13 @@
     }
   }
 
-  @keyframes test {
+  @keyframes slideToTop {
     from {
       transform: translateY(0);
     }
 
     to {
-      transform: translateY(-100%);
+      transform: translateY(-100vh);
     }
   }
 
@@ -210,6 +192,49 @@
       transform: rotate(135deg);
     }
   }
+
+  @keyframes rightToCenter {
+    from {
+      transform: rotate(45deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes leftToCenter{
+    from {
+      transform: rotate(135deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+
+  h1{
+    @extend .primary-bold;
+    font-size: $fs-xl;
+    padding-left: 2.5vw;
+    padding-top: 18px;
+  }
+
+  .menu ul li{
+    list-style: none;
+    margin-top: 30px;
+  }
+  
+  .menu ul li a{
+    font-size: $fs-xl;
+    color: $space-grey;
+    transition: all .3s ease-in-out; // added transition so it works on hover/off
+  }
+
+  .menu ul li a:hover{
+    color: $black;
+    transition: all .3s ease-in-out;
+  }
 }
 
 
@@ -222,7 +247,25 @@
       width: 35px;
       height: 20px;
     }
-  }
 
-  
+    h1{
+      font-size: $fs-s;
+    }
+
+    .menu ul li a{
+      font-size: $fs-s;
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  #nav{
+    h1{
+      font-size: $fs-xs;
+    }
+
+    .menu ul li a{
+      font-size: $fs-xs;
+    }
+  }
 }
