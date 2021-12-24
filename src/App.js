@@ -6,7 +6,6 @@ import {
 import Home from './Components/Home/Home'
 import Leadership from './Components/Leadership/Leadership';
 import Navbar from './Components/Navbar/Navbar'
-import './Styles/App.css';
 
 function App() {
   return (
