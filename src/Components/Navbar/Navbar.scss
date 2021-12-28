@@ -4,7 +4,6 @@
 
 #nav {
   @extend .container;
-  background-color: $black;
   width: 100%;
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -79,8 +78,9 @@
     background-color: #f1f1f1;
     height: 100vh;
     position: fixed;
-    left:0;
+    left: 0;
     top: 0;
+    z-index: 200;
   }
 
   .menu.hide {
@@ -103,7 +103,7 @@
 
   .menu ul{
     margin-top: 100px;
-    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .x-icon {
@@ -212,16 +212,20 @@
     }
   }
 
-  h1{
-    @extend .primary-bold;
+  h2{
+    @extend .title;
     font-size: $fs-xl;
     padding-left: 2.5vw;
     padding-top: 18px;
   }
 
+  .menu ul {
+    float: right;
+  }
   .menu ul li{
     list-style: none;
     margin-top: 30px;
+    text-align: right;
   }
   
   .menu ul li a{
@@ -247,7 +251,7 @@
       height: 20px;
     }
 
-    h1{
+    h2{
       font-size: $fs-s;
     }
 
@@ -259,7 +263,7 @@
 
 @media screen and (max-width: 400px){
   #nav{
-    h1{
+    h2{
       font-size: $fs-xs;
     }
 

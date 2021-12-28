@@ -1,1 +1,183 @@
-/* No CSS *//*# sourceMappingURL=Home.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap");
+.title, #home h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.subtitle, #home h3 {
+  font-weight: 700;
+}
+
+.handler {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.p, #home p {
+  font-weight: 300;
+}
+
+.black-gradient {
+  background: #464749;
+  background: -webkit-gradient(linear, right top, left top, from(#464749), color-stop(12%, #3f4042), color-stop(48%, #242728), to(black));
+  background: linear-gradient(270deg, #464749 0%, #3f4042 12%, #242728 48%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#464749",endColorstr="#000000",GradientType=1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container, #home .main-content {
+  padding: 0 2.5vw;
+}
+
+#home main {
+  color: #f1f1f1;
+  height: 60vh;
+}
+
+#home .main-content {
+  padding-top: 60px;
+  position: relative;
+  z-index: 103;
+}
+
+#home h2 {
+  font-size: 5rem;
+}
+
+#home h3 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+#home p {
+  width: 57%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+#home .gradient-right-light {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(44deg, #000 56%, #2e2f30);
+}
+
+#home .gradient-left-light {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  bottom: 30vh;
+  left: 0;
+  z-index: 100;
+  background-image: linear-gradient(280deg, #000 45%, #2e2f30);
+  -webkit-transform: translate(0, 60%) rotate(-12deg) scale(1.3);
+  transform: translate(0, 60%) rotate(-12deg) scale(1.3);
+}
+
+#home .chessboard-img {
+  width: 100%;
+  position: relative;
+  bottom: 38vh;
+  left: 0;
+  z-index: 102;
+}
+
+#home .chessboard-img img {
+  width: 100%;
+}
+
+#home .test {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  top: -38vh;
+  left: 0;
+  z-index: 102;
+  background: white;
+}
+
+@media screen and (max-width: 1188px) {
+  #home .gradient-left-light {
+    height: 35vh;
+    bottom: 50vh;
+  }
+  #home h2 {
+    font-size: 4rem;
+  }
+  #home h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  #home p {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #home h2 {
+    font-size: 3.4rem;
+  }
+  #home h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  #home p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #home h2 {
+    font-size: 3rem;
+  }
+  #home p {
+    width: 80%;
+  }
+  #home .gradient-left-light {
+    bottom: 40vh;
+  }
+  #home .chessboard-img {
+    bottom: 18vh;
+  }
+  #home .test {
+    top: -18vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #home h2 {
+    font-size: 2rem;
+  }
+  #home h3 {
+    font-size: 18px;
+  }
+  #home p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

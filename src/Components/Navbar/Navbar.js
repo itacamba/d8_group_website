@@ -56,7 +56,7 @@ const Navbar = () => {
                 <BurgerIcon open={open} toggleOpen={toggleOpen}/>
                 <div id="menu" className={`menu ${menuAnimation}`}>
                     <XIcon toggleOpen={toggleOpen} menuAnimation={menuAnimation}/>
-                    <h1>The New Way to Win</h1>
+                    <h2>The New Way to Win</h2>
                     <ul>
                         {
                             pages.map((page,i) => <li key={i}>

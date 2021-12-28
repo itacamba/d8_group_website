@@ -1,16 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap');
 
 
 // fonts
-.primary-bold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
+
 $fs-xl: 2rem;
 $fs-s: 1.5rem;
 $fs-xs: 1.2rem;
 
+// text 
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-weight: 700;
+}
+
+.handler {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.p {
+    font-weight: 300;
+}
 
 // colors 
 $black: #000000;
 $space-grey: #4B4B4C;
+
+
+// gradients
+.black-gradient {
+    background: rgb(70,71,73);
+    background: -moz-linear-gradient(270deg, rgba(70,71,73,1) 0%, rgba(63,64,66,1) 12%, rgba(36,39,40,1) 48%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(70,71,73,1) 0%, rgba(63,64,66,1) 12%, rgba(36,39,40,1) 48%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(270deg, rgba(70,71,73,1) 0%, rgba(63,64,66,1) 12%, rgba(36,39,40,1) 48%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#464749",endColorstr="#000000",GradientType=1);
+}
