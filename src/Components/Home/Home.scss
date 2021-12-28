@@ -6,14 +6,20 @@
 
     main {
         color: #f1f1f1;
-        height: 60vh;
+        background-image: linear-gradient(
+            44deg,#000 56%,#2e2f30);
+        height: 700px;
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
     }
 
     .main-content{
         @extend .container;
-        padding-top: 60px;
-        position: relative;
-        z-index: 103;
+        padding-top: 80px;
+        position: relative; // for the z-index and the chessboard-img to work.
+        z-index: 102;
+        padding-left: 40px
     }
 
     h2 {
@@ -29,66 +35,45 @@
 
     p {
         @extend .p;
-        width: 57%;
+        width: 40%;
         font-size: $fs-xs;
         line-height: 2rem;
         margin-top: 1rem;
     }
 
-    .gradient-right-light {
+    .gradient-bottom {
         width: 100%;
-        height: 70vh;
-        position: absolute;
-        top: 0;
+        height: 350px;
+        position: relative;
+        top: -35%;
         left: 0;
-        z-index: -1;
-        background-image: linear-gradient(
-            44deg,#000 56%,#2e2f30);
-    }
-
-    .gradient-left-light {
-        width: 100%;
-        height: 50vh;
-        position: absolute;
-        bottom: 30vh;
-        left: 0;
-        z-index: 100;
         background-image: linear-gradient(280deg,#000 45%,#2e2f30);
         -webkit-transform: translate(0,60%) rotate(-12deg) scale(1.3);
         -ms-transform: translate(0,60%) rotate(-12deg) scale(1.3);
         transform: translate(0,60%) rotate(-12deg) scale(1.3);
     }
-
+    
     .chessboard-img {
         width: 100%;
-        position: relative;
-        bottom: 38vh;
-        left:0;
-        z-index: 102;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
     .chessboard-img img{
         width: 100%;
     }
 
-    .test { // top: is the same as .chessboard-img bottom
-        width: 100%;
+    .test {
         height: 300px;
-        position: relative;
-        top: -38vh;
-        left:0;
-        z-index: 102;
-        background: white;
+        width: 100%;
+        background:blue;
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 1188px){
+@media screen and (max-width: 1230px){
     #home {
-        .gradient-left-light {
-            height: 35vh;
-            bottom: 50vh;
-        }
-
         h2 {
             font-size: $fs-xl * 2;
         }
@@ -101,12 +86,18 @@
         p {
             width: 55%;
         }
+
     }
 
 }
 
 @media screen and (max-width: 990px){
     #home {
+
+        main {
+            height: 600px;
+        }
+
         h2 {
             font-size: $fs-xl * 1.7;
         }
@@ -119,11 +110,16 @@
         p {
             font-size: 16px;
         }
+
+
     }
 }
 
 @media screen and (max-width: 750px){
     #home {
+        main {
+            height: 500px;
+        }
 
         h2 {
             font-size: $fs-xl * 1.5;
@@ -133,17 +129,6 @@
             width: 80%;
         }
 
-        .gradient-left-light {
-            bottom: 40vh;
-        } 
-
-        .chessboard-img {
-            bottom: 18vh;
-        }
-
-        .test {
-            top: -18vh;
-        }
     }
 }
 

@@ -17,11 +17,4 @@
 .p {
   font-weight: 300;
 }
-
-.black-gradient {
-  background: #464749;
-  background: -webkit-gradient(linear, right top, left top, from(#464749), color-stop(12%, #3f4042), color-stop(48%, #242728), to(black));
-  background: linear-gradient(270deg, #464749 0%, #3f4042 12%, #242728 48%, black 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#464749",endColorstr="#000000",GradientType=1);
-}
 /*# sourceMappingURL=variables.css.map */
