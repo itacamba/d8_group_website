@@ -12,6 +12,8 @@
   align-items: center;
   background-image: linear-gradient(
             170deg,#000 56%,#2e2f30);
+  overflow-x: hidden; // fixed menu bug.
+  
 
   .logo-container{
     min-width: 4vw; //the smallest it will ever be

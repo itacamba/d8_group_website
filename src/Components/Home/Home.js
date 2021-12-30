@@ -1,8 +1,11 @@
 import React from 'react';
 import "./Home.css"
 import Chessboard from '../../Images/chessboard.png'
+import CarouselHorizontal from './Home-Components/CarouselHorizontal';
+import CallToAction from './Home-Components/CallToAction/CallToAction';
 
 const Home = () => {
+
     return (
         <div id="home">
             <main>
@@ -18,7 +21,17 @@ const Home = () => {
                         <img src={Chessboard} alt="chessboard and queen" />
                 </div>
             </main>
-            <div className="test"></div>
+
+            <div className="services">
+                <div className="title-section">
+                    <h4>Our Services</h4>
+                    <h1>BUSINESS DEVELOPMENT AS A SERVICE</h1>
+                </div>
+                <CarouselHorizontal/>
+            </div>
+
+            <CallToAction/>
+
         </div>
     );
 };

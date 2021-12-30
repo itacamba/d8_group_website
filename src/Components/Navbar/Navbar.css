@@ -5,7 +5,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Merriweather', serif;
-  overflow-x: hidden;
 }
 
 a {
@@ -58,6 +57,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-image: linear-gradient(170deg, #000 56%, #2e2f30);
+  overflow-x: hidden;
 }
 
 #nav .logo-container {

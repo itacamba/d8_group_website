@@ -22,23 +22,17 @@
         padding-left: 40px
     }
 
-    h2 {
-        @extend .title;
+    .main-content h2 {
         font-size: $fs-xl * 2.5;
     }
 
-    h3 {
-        @extend .subtitle;
-        font-size: $fs-xl;
-        margin-top: 3rem;
+    .main-content h3 {
+        font-size: $fs-s * 1.5;
     }
 
-    p {
-        @extend .p;
+    .main-content p {
         width: 40%;
         font-size: $fs-xs;
-        line-height: 2rem;
-        margin-top: 1rem;
     }
 
     .gradient-bottom {
@@ -64,29 +58,152 @@
         width: 100%;
     }
 
-    .test {
-        height: 300px;
+    // .test {
+    //     height: 300px;
+    //     width: 100%;
+    //     background:blue;
+    //     margin-top: 10px;
+    // }
+
+    .services {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: #efefef;
+        position: relative; // to position the .arrow-right 
+    }
+
+    .title-section {
+        @extend .container;
+    }
+
+    .title-section h4{
+        margin-bottom: 2rem;
+    }
+
+
+    .horizontal-carousel {
+        padding: 0;
+        display: flex;
+        overflow-x: auto; // makes it scroll horizontally
+        margin-top: 70px;
+        margin-left: 10%;
+        -ms-overflow-style: none;  /* IE and Edge */ // removes scrollbar
+        scrollbar-width: none;  /* Firefox */ // removes scrollbar
+    }
+
+    .horizontal-carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .arrow-right {
+        position: absolute;
+        left: 5%;
+        top: 60%;
+        color: #333;
+    }
+
+    .arrow-right::after {
+        content: '\2192';
+        /* little make up */
+        font-size: 2em;
+        /* whatever needed*/
+        padding: 0 0.5em;
+        /* whatever needed*/
+        vertical-align: -0.1em;
+        /* whatever needed*/
+    }
+
+    .carousel-card {
+        min-width: 350px; // makes it 350px on a display flex 
+        margin-right: 30px;
+        padding: 2.5em;
+        padding-top: 2.8em;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        position: relative; // for the card-circle-icon to position
+        background-image: linear-gradient(
+            180deg,#fff,hsla(0,0%,100%,0));
+        transition: all .1s ease-in-out; // makes transition work on hover-off
+    }
+    
+    .carousel-card:hover {
+        @extend .box-shadow-sharp;
+        transition: all .1s ease-in-out; 
+    }
+
+    .card-circle-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        position: absolute;
+        top:  -45px;
+        left: 2.5em; // same as .carousel-card padding-left
+        background-color: #fff;
+        @extend .box-shadow-blur;
+    }
+
+    .carousel-card h2 {
+        color: $tiffany;
+        margin-top: 20px;
+    }
+
+    .carousel-card h3 {
+        margin-top: 1rem;
+    }
+
+    .carousel-card p {
+        margin-top: 1rem;
+    }
+
+    .carousel-card button {
+        display: block;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        background: none;
+        font-family: $primary-font;
+        font-weight: 300;
+        font-size: $fs-xs;
+        color: $light-grey;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+    .call-to-action-banner {
         width: 100%;
-        background:blue;
-        margin-top: 10px;
+        background-color: $black;
+        color: #fff;
+        @extend .container;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        height: 400px;
+    }
+
+    .call-to-action-banner .main-button {
+        @extend .main-button;
     }
 }
 
+
+// Start media queries
 @media screen and (max-width: 1230px){
     #home {
-        h2 {
+
+        .main-content h2 {
             font-size: $fs-xl * 2;
         }
     
-        h3 {
+        .main-content h3 {
             font-size: $fs-s;
-            margin-top: 2rem;
         }
     
-        p {
+        .main-content p {
             width: 55%;
         }
 
+        .arrow-right {
+            left: 3%;
+        }
     }
 
 }
@@ -98,20 +215,29 @@
             height: 600px;
         }
 
-        h2 {
-            font-size: $fs-xl * 1.7;
+        .main-content h2 {
+            font-size: $fs-xl * 1.3;
         }
     
-        h3 {
-            font-size: $fs-xs;
-            margin-top: 2rem;
-        }
-    
-        p {
-            font-size: 16px;
+
+        .arrow-right {
+            display: none;
         }
 
+        .horizontal-carousel {
+            width: 100%;
+            margin-left: 0;
+            padding: 0 2.5vw;
+            overflow-x: hidden; 
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
+        .carousel-card {
+            width: 47%;
+            min-width: unset; // removes min-width so flex-wrap can work
+            margin-right: 0;
+        }
     }
 }
 
@@ -121,27 +247,32 @@
             height: 500px;
         }
 
-        h2 {
-            font-size: $fs-xl * 1.5;
-        }
-
-        p { 
+        .main-content p { 
             width: 80%;
         }
 
+        .services {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .horizontal-carousel {
+            flex-direction: column;
+        }
+
+        .carousel-card {
+            width: 100%;
+            min-width: unset; // removes min-width so flex-wrap can work
+            margin-right: 0;
+            background-color: #fff;
+            padding: 2em;
+        }
     }
 }
 
 @media screen and (max-width: 700px){
     #home {
 
-        h2 {
-            font-size: $fs-xl;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
 
         p {
             font-size: 14px;
