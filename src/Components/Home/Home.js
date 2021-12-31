@@ -3,6 +3,7 @@ import "./Home.css"
 import Chessboard from '../../Images/chessboard.png'
 import CarouselHorizontal from './Home-Components/CarouselHorizontal';
 import CallToAction from './Home-Components/CallToAction/CallToAction';
+import UpcomingEvents from './Home-Components/UpcomingEvents/UpcomingEvents';
 
 const Home = () => {
 
@@ -31,6 +32,8 @@ const Home = () => {
             </div>
 
             <CallToAction/>
+
+            <UpcomingEvents/>
 
         </div>
     );

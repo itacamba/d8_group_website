@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap");
 * {
   font-family: 'Merriweather', serif;
@@ -9,27 +10,29 @@
 }
 
 h1 {
+  font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
 }
 
 h2 {
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 h3 {
+  font-size: 1.2rem;
   font-family: "Merriweather", serif;
   font-weight: 700;
-  margin-top: 3rem;
-  line-height: 1.8rem;
+  margin-top: 2.5rem;
+  line-height: 1.9rem;
 }
 
 h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -39,14 +42,14 @@ p {
 }
 
 @media screen and (max-width: 1188px) {
-  h3 {
+  ˝ h3 {
     margin-top: 2.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -66,10 +69,10 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: black;
-  padding: 1em 2em;
+  padding: 1em 2.5em;
   display: inline-block;
-  margin-top: 30px;
   text-transform: uppercase;
+  margin-top: 2rem;
 }
 
 a {
@@ -106,16 +109,16 @@ img {
 }
 
 #home .main-content h2 {
-  font-size: 5rem;
+  font-size: 6.25rem;
 }
 
 #home .main-content h3 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
 }
 
 #home .main-content p {
   width: 40%;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #home .gradient-bottom {
@@ -173,7 +176,7 @@ img {
   position: absolute;
   left: 5%;
   top: 60%;
-  color: #333;
+  color: #aaaaaa;
 }
 
 #home .arrow-right::after {
@@ -237,7 +240,7 @@ img {
   background: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #aaaaaa;
   margin-top: 2rem;
   cursor: pointer;
@@ -249,15 +252,31 @@ img {
   color: #fff;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  height: 400px;
+}
+
+#home .call-to-action-banner h2 {
+  color: #09AED6;
+}
+
+#home .call-to-action-banner h3 {
+  font-weight: 300;
+}
+
+#home .upcoming-events-container {
+  width: 100%;
+  background-image: url(./../../Images/public_speaker.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20vw;
+  color: #fff;
 }
 
 @media screen and (max-width: 1230px) {
   #home .main-content h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   #home .main-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #home .main-content p {
     width: 55%;
@@ -272,7 +291,7 @@ img {
     height: 600px;
   }
   #home .main-content h2 {
-    font-size: 2.6rem;
+    font-size: 3.25rem;
   }
   #home .arrow-right {
     display: none;

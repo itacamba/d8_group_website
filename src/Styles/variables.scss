@@ -9,39 +9,42 @@
 }
 
 
-// fonts
-$fs-xl: 2rem;
-$fs-s: 1.5rem;
-$fs-xs: 1.2rem;
+//fonts
+$fs-large: 2.5rem;
+$fs-medium: 2rem;
+$fs-small: 1.2rem;
+$fs-extra-small: 1rem;
+//font-families
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Merriweather', serif;
 
 
 
 // headers
-
 h1 {
+    font-size: $fs-large;
     font-family: $primary-font;
-    font-size: $fs-xl * 1.5;
 }
 
 h2 {
+    font-size: $fs-medium;
     font-family: $primary-font;
     font-weight: 700;
 }
 
 h3 {
+    font-size: $fs-small;
     font-family: $secondary-font;
     font-weight: 700;
-    margin-top: 3rem;
-    line-height: 1.8rem;
+    margin-top: 2.5rem;
+    line-height: 1.9rem;
 }
 
 h4 {
     font-family: $primary-font;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: $fs-small;
 }
 
 p {
@@ -60,7 +63,7 @@ p {
 @media screen and (max-width: 700px){
 
     h2 {
-        font-size: $fs-xl;
+        font-size: $fs-large;
     }
 
 }
@@ -93,8 +96,8 @@ $tiffany: #09AED6;
     font-family: $primary-font;
     font-weight: 600;
     color: black;
-    padding: 1em 2em;
+    padding: 1em 2.5em;
     display: inline-block;
-    margin-top: 30px;
     text-transform: uppercase;
+    margin-top: 2rem;
 }
