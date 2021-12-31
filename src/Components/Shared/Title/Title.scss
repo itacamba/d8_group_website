@@ -1,0 +1,11 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+
+.title-section {
+    @extend .container;
+}
+
+.title-section h4{
+    margin-bottom: 2rem;
+}

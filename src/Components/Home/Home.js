@@ -5,6 +5,7 @@ import CarouselHorizontal from './Home-Components/CarouselHorizontal/CarouselHor
 import CallToAction from './Home-Components/CallToAction/CallToAction';
 import UpcomingEvents from './Home-Components/UpcomingEvents/UpcomingEvents';
 import WhyUs from './Home-Components/WhyUs/WhyUs';
+import Title from '../Shared/Title/Title'
 
 const Home = () => {
 
@@ -25,10 +26,7 @@ const Home = () => {
             </main>
 
             <div className="services">
-                <div className="title-section">
-                    <h4>Our Services</h4>
-                    <h1>BUSINESS DEVELOPMENT AS A SERVICE</h1>
-                </div>
+                <Title heading="OUR SERVICES" mainTitle="BUSINESS DEVELOPMENT AS A SERVICE"/>
                 <CarouselHorizontal/>
             </div>
 

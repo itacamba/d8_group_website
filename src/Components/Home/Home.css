@@ -75,7 +75,7 @@ p {
   margin-top: 2rem;
 }
 
-.section-padding-top-bottom, #home .services, #home .call-to-action-banner, #home .upcoming-events-container, #home .why-us-container {
+.section-padding-top-bottom, #home .services, #home .upcoming-events-container, #home .why-us {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -93,7 +93,7 @@ img {
   display: block;
 }
 
-.container, #home .main-content, #home .title-section, #home .call-to-action-banner, #home .absolute-text {
+.container, #home .main-content, #home .absolute-text {
   padding-left: 5vw;
   padding-right: 5vw;
 }
@@ -152,10 +152,6 @@ img {
 #home .services {
   background-color: #efefef;
   position: relative;
-}
-
-#home .title-section h4 {
-  margin-bottom: 2rem;
 }
 
 #home .horizontal-carousel {
@@ -250,20 +246,6 @@ img {
   cursor: pointer;
 }
 
-#home .call-to-action-banner {
-  width: 100%;
-  background-color: #000000;
-  color: #f1f1f1;
-}
-
-#home .call-to-action-banner h2 {
-  color: #09AED6;
-}
-
-#home .call-to-action-banner h3 {
-  font-weight: 300;
-}
-
 #home .upcoming-events-container {
   width: 100%;
   padding-bottom: 0;
@@ -316,49 +298,9 @@ img {
   padding: 3rem;
 }
 
-#home .why-us-container {
+#home .why-us {
   background-color: #000000;
   color: #f1f1f1;
-}
-
-#home .flex-gallery {
-  width: 80%;
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#home .separator {
-  width: 3rem;
-  height: 5px;
-  background-color: #f1f1f1;
-  margin-bottom: 10px;
-  display: none;
-}
-
-#home .gallery-card {
-  width: 30%;
-  margin-right: 2rem;
-  margin-top: 3rem;
-}
-
-#home .gallery-card span {
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-  margin-right: 5px;
-  color: #09AED6;
-}
-
-#home .gallery-card-img {
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
-
-#home .gallery-card-img img {
-  width: 100%;
 }
 
 @media screen and (max-width: 1230px) {
@@ -373,12 +315,6 @@ img {
   }
   #home .arrow-right {
     left: 3%;
-  }
-  #home .flex-gallery {
-    width: 90%;
-  }
-  #home .gallery-card {
-    width: 25%;
   }
 }
 
@@ -423,15 +359,6 @@ img {
   #home .absolute-text {
     display: block;
   }
-  #home .flex-gallery {
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #home .gallery-card {
-    width: 45%;
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 750px) {
@@ -467,16 +394,6 @@ img {
   }
   #home .absolute-text a {
     font-weight: 300;
-  }
-  #home .flex-gallery {
-    width: 95%;
-    margin: 0 auto;
-  }
-  #home .separator {
-    display: block;
-  }
-  #home .gallery-card {
-    width: 100%;
   }
 }
 

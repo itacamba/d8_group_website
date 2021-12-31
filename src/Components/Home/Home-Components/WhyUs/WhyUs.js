@@ -4,6 +4,8 @@ import Experience from '../../../../Images/experience.jpeg';
 import Network from '../../../../Images/networking.jpeg';
 import Savings from '../../../../Images/saving.jpeg';
 import BusinessIntel from '../../../../Images/business_intel.jpeg';
+import '../../../SharedStyles/FlexGallery/FlexGallery.css'
+import Title from '../../../Shared/Title/Title';
 
 const WhyUs = () => {
     const skills = [
@@ -39,10 +41,8 @@ const WhyUs = () => {
 
 
     return (
-        <div className='why-us-container'>
-            <div className="title-section">
-                <h4>WHY CHOOSE US</h4>
-            </div>
+        <div className='why-us'>
+           <Title heading="WHY CHOOSE US" />
             <div className="flex-gallery">
                 {
                     skills.map((skill, i) => 

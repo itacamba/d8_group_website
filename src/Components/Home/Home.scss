@@ -71,14 +71,6 @@
         position: relative; // to position the .arrow-right 
     }
 
-    .title-section {
-        @extend .container;
-    }
-
-    .title-section h4{
-        margin-bottom: 2rem;
-    }
-
 
     .horizontal-carousel {
         padding: 0;
@@ -168,22 +160,6 @@
         cursor: pointer;
     }
 
-    .call-to-action-banner {
-        width: 100%;
-        background-color: $black;
-        color: $white;
-        @extend .container;
-        @extend .section-padding-top-bottom;
-    }
-
-    .call-to-action-banner h2{
-        color: $tiffany;
-    }
-    
-    .call-to-action-banner h3 {
-        font-weight: 300;
-    }
-    
     .main-button {
         @extend .main-button;
     }
@@ -240,45 +216,10 @@
     }
 
     // Why Us
-    .why-us-container {
+    .why-us {
         background-color: $black;
         @extend .section-padding-top-bottom;
         color: $white;
-    }
-
-    .flex-gallery {
-        width: 80%;
-        margin-left: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .separator {
-        width: 3rem;
-        height: 5px;
-        background-color: $white;
-        margin-bottom: 10px;
-        display: none;
-    }
-    .gallery-card {
-        width: 30%;
-        margin-right: 2rem;
-        margin-top: 3rem;
-    }
-
-    .gallery-card span {
-        font-size: $fs-medium;
-        font-family: $primary-font;
-        margin-right: 5px;
-        color: $tiffany;
-    }
-
-    .gallery-card-img{
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-
-    .gallery-card-img img {
-        width: 100%;
     }
     // End Why Us
 }
@@ -302,14 +243,6 @@
 
         .arrow-right {
             left: 3%;
-        }
-
-        .flex-gallery {
-            width: 90%;
-        }
-
-        .gallery-card {
-            width: 25%;
         }
     }
 
@@ -361,16 +294,6 @@
         .absolute-text {
             display: block;
         }
-
-        .flex-gallery {
-            width: 100%;
-            justify-content: space-around;
-        }
-
-        .gallery-card {
-            width: 45%;
-            margin-right: 0;
-        }
     }
 }
 
@@ -413,18 +336,6 @@
             font-weight: 300;
         }
 
-        .flex-gallery{
-            width: 95%;
-            margin: 0 auto;
-        }
-
-        .separator {
-            display: block;
-        }
-
-        .gallery-card {
-            width: 100%;
-        }
     }
 }
 

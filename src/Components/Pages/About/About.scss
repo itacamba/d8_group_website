@@ -1,0 +1,12 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+
+
+.about-us .why-us{
+    @extend .section-padding-top-bottom;
+}
+
+.about-us .why-us .separator {
+    background-color: $black;
+}

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap");
+* {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  line-height: 1.9rem;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+p {
+  margin-top: 1rem;
+  line-height: 1.8rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1188px) {
+  ˝
+h3 {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.box-shadow-sharp {
+  -webkit-box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
+  box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
+}
+
+.box-shadow-blur {
+  -webkit-box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
+  box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
+}
+
+.main-button {
+  text-align: center;
+  background-color: #09AED6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: black;
+  padding: 1em 2.5em;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.section-padding-top-bottom {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.leadership {
+  background-color: #f1f1f1;
+  padding-bottom: 4rem;
+}
+
+.leadership .title-section {
+  padding-top: 4rem;
+}
+
+.leadership .gallery-card {
+  background-color: #fff;
+  padding: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.leadership .gallery-card h3:first-of-type {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #09AED6;
+  margin-top: 1rem;
+}
+
+.leadership .gallery-card h3:last-of-type {
+  margin-top: 0;
+}
+
+.leadership .gallery-card i {
+  margin-top: 1rem;
+  font-size: 35px;
+  color: #09AED6;
+}
+/*# sourceMappingURL=Leadership.css.map */

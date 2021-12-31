@@ -1,14 +1,12 @@
 import React from 'react';
 import Speaker from '../../../../Images/public_speaker.jpg'
+import Title from '../../../Shared/Title/Title'
 
 const UpcomingEvents = () => {
     return (
         <div className='upcoming-events-container'>
-            <div className="title-section">
-                <h4>UPCOMING EVENTS</h4>
-                <h2>STRATEGIES AND OPPORTUNITIES</h2>
-            </div>
-
+            <Title heading="UPCOMING EVENTS" title="STRATEGIES AND OPPORTUNITIES"/>
+            
             <div className="flex-container">
                 <div className="col-img">
                     <img src={Speaker} alt="" />

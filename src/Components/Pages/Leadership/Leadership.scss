@@ -1,0 +1,35 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+
+.leadership {
+    background-color: $white;
+    padding-bottom: 4rem;
+}
+.leadership .title-section{
+    padding-top: 4rem;
+}
+
+.leadership .gallery-card {
+    background-color: #fff;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.leadership .gallery-card h3:first-of-type {
+    font-family: $primary-font;
+    font-size: 1.5rem;
+    color: $tiffany;
+    margin-top: 1rem;
+}
+
+.leadership .gallery-card h3:last-of-type {
+    margin-top: 0;
+}
+
+.leadership .gallery-card i{
+    margin-top: 1rem;
+    font-size: 35px;
+    color: $tiffany;
+}

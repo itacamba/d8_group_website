@@ -1,0 +1,86 @@
+
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+    
+.flex-gallery {
+    width: 80%;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.separator {
+    width: 3rem;
+    height: 5px;
+    background-color: $white;
+    margin-bottom: 10px;
+    display: none;
+}
+.gallery-card {
+    width: 30%;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.gallery-card span {
+    font-size: $fs-medium;
+    font-family: $primary-font;
+    margin-right: 5px;
+    color: $tiffany;
+}
+
+.gallery-card-img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-card-img img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1230px){
+
+    .flex-gallery {
+        width: 90%;
+    }
+
+    .gallery-card {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 990px){
+
+    .flex-gallery {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .gallery-card {
+        width: 45%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .flex-gallery{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .separator {
+        display: block;
+    }
+
+    .gallery-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .gallery-card span {
+        font-size: $fs-large;
+    }
+
+}

@@ -50,7 +50,9 @@ const Navbar = () => {
     return (
         <nav id="nav">
             <div className="logo-container">
-                <img className="logo-img" src={Logo} alt="d8 group logo" />
+                <a href="/">
+                    <img className="logo-img" src={Logo} alt="d8 group logo" />
+                </a>
             </div>
             <div className="menu-container">
                 <BurgerIcon open={open} toggleOpen={toggleOpen}/>

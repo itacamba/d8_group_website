@@ -1,0 +1,19 @@
+@import '../../../../Styles/variables';
+@import '../../../../Styles/index';
+
+
+.call-to-action-banner {
+    width: 100%;
+    background-color: $black;
+    color: $white;
+    @extend .container;
+    @extend .section-padding-top-bottom;
+}
+
+.call-to-action-banner h2{
+    color: $tiffany;
+}
+
+.call-to-action-banner h3 {
+    font-weight: 300;
+}

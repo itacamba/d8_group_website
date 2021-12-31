@@ -1,0 +1,35 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+.page-heading{
+    width: 100%;
+    @extend .container;
+    @extend .section-padding-top-bottom;
+    background-color: $black;
+    position: relative;
+}
+
+.dark-logo {
+    width: 43%;
+    max-width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dark-logo img {
+    width: 100%;
+}
+
+.page-heading-content {
+    @extend .container;
+    color: #fff;
+    position:relative;
+    z-index: 1;
+}
+
+.page-heading-content p {
+    max-width: 500px;
+}
