@@ -1,5 +1,5 @@
 import React from 'react';
-import CarouselCard from './CarouselHorizontal/CarouselComponents/CarouselCard';
+import CarouselCard from './CarouselComponents/CarouselCard';
 
 const CarouselHorizontal = () => {
 

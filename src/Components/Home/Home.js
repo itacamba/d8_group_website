@@ -1,9 +1,10 @@
 import React from 'react';
 import "./Home.css"
 import Chessboard from '../../Images/chessboard.png'
-import CarouselHorizontal from './Home-Components/CarouselHorizontal';
+import CarouselHorizontal from './Home-Components/CarouselHorizontal/CarouselHorizontal';
 import CallToAction from './Home-Components/CallToAction/CallToAction';
 import UpcomingEvents from './Home-Components/UpcomingEvents/UpcomingEvents';
+import WhyUs from './Home-Components/WhyUs/WhyUs';
 
 const Home = () => {
 
@@ -32,8 +33,8 @@ const Home = () => {
             </div>
 
             <CallToAction/>
-
             <UpcomingEvents/>
+            <WhyUs/>
 
         </div>
     );

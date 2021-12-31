@@ -5,7 +5,7 @@
 #home{
 
     main {
-        color: #f1f1f1;
+        color: $white;
         background-image: linear-gradient(
             44deg,#000 56%,#2e2f30);
         height: 700px;
@@ -66,8 +66,7 @@
     // }
 
     .services {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        @extend .section-padding-top-bottom;
         background-color: #efefef;
         position: relative; // to position the .arrow-right 
     }
@@ -172,10 +171,9 @@
     .call-to-action-banner {
         width: 100%;
         background-color: $black;
-        color: #fff;
+        color: $white;
         @extend .container;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        @extend .section-padding-top-bottom;
     }
 
     .call-to-action-banner h2{
@@ -186,18 +184,103 @@
         font-weight: 300;
     }
     
-    .call-to-action-banner .main-button {
+    .main-button {
         @extend .main-button;
     }
 
     .upcoming-events-container {
         width: 100%;
-        background-image: url(./../../Images/public_speaker.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 20vw;
-        color: #fff;
+        @extend .section-padding-top-bottom;
+        padding-bottom: 0;
     }
+
+    .flex-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .col-img {
+        width: 60%;
+        position: relative; // to make .absolute-text work
+    }
+
+    .col-img img {
+        width: 100%;
+    }
+
+    .absolute-text { 
+        width: 60%;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        color: $white;
+        @extend .container;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+
+    .absolute-text a {
+        display: inline-block;
+        padding-top: 2rem;
+        font-family: $primary-font;
+        font-weight: 600;
+        color: $white;
+    }
+    .col-product {
+        width: 40%;
+        padding: 3rem;
+    }
+
+    .col-product .main-button{
+        @extend .box-shadow-sharp;
+    }
+
+    // Why Us
+    .why-us-container {
+        background-color: $black;
+        @extend .section-padding-top-bottom;
+        color: $white;
+    }
+
+    .flex-gallery {
+        width: 80%;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .separator {
+        width: 3rem;
+        height: 5px;
+        background-color: $white;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .gallery-card {
+        width: 30%;
+        margin-right: 2rem;
+        margin-top: 3rem;
+    }
+
+    .gallery-card span {
+        font-size: $fs-medium;
+        font-family: $primary-font;
+        margin-right: 5px;
+        color: $tiffany;
+    }
+
+    .gallery-card-img{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .gallery-card-img img {
+        width: 100%;
+    }
+    // End Why Us
 }
 
 
@@ -219,6 +302,14 @@
 
         .arrow-right {
             left: 3%;
+        }
+
+        .flex-gallery {
+            width: 90%;
+        }
+
+        .gallery-card {
+            width: 25%;
         }
     }
 
@@ -254,6 +345,32 @@
             min-width: unset; // removes min-width so flex-wrap can work
             margin-right: 0;
         }
+
+        .flex-container {
+            flex-direction: column;
+        }
+
+        .col-img {
+            width: 100%;
+        }
+
+        .col-product {
+            display: none;
+        }
+
+        .absolute-text {
+            display: block;
+        }
+
+        .flex-gallery {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .gallery-card {
+            width: 45%;
+            margin-right: 0;
+        }
     }
 }
 
@@ -283,6 +400,31 @@
             background-color: #fff;
             padding: 2em;
         }
+
+        .absolute-text {
+            top: 20%;
+        }
+        .absolute-text h2 {
+            font-size: $fs-small;
+            line-height: 2rem;
+        }
+
+        .absolute-text a {
+            font-weight: 300;
+        }
+
+        .flex-gallery{
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .separator {
+            display: block;
+        }
+
+        .gallery-card {
+            width: 100%;
+        }
     }
 }
 
@@ -292,6 +434,15 @@
 
         p {
             font-size: 14px;
+        }
+
+        .absolute-text h2 {
+            font-size: $fs-extra-small;
+            line-height: 1.5rem;
+        }
+
+        .absolute-text a{
+            padding-top: 1rem;
         }
     }
 
