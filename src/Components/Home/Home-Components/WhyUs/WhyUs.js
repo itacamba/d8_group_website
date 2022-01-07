@@ -42,7 +42,7 @@ const WhyUs = () => {
 
     return (
         <div className='why-us'>
-           <Title heading="WHY CHOOSE US" />
+           <Title heading="CHECKMATE" title="WHY CHOOSE US"/>
             <div className="flex-gallery">
                 {
                     skills.map((skill, i) => 
@@ -51,7 +51,7 @@ const WhyUs = () => {
                         <div className="gallery-card-img">
                             {
                                 i === 0? 
-                                <img src={Money} alt="Money Saving " />
+                                <img src={Money} alt="Money Saving" />
                                 : i === 1?
                                 <img src={Experience} alt="Experience" />
                                 : i === 2? 

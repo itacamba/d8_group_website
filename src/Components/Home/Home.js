@@ -17,7 +17,10 @@ const Home = () => {
                     <h3>Federal Government Contracts</h3>
                     <p>d8 Group helps you assess the entire federal, 
                     state and local market space to determine
-                    who is buying exactly what you are selling.</p>
+                    who is buying exactly what you are selling and 
+                    positions you to ethically win the contract award.
+                    
+                    </p>
                 </div>
                 <div className="gradient-bottom"></div>
                 <div className="chessboard-img">
@@ -31,8 +34,8 @@ const Home = () => {
             </div>
 
             <CallToAction/>
-            <UpcomingEvents/>
             <WhyUs/>
+            <UpcomingEvents/>
 
         </div>
     );

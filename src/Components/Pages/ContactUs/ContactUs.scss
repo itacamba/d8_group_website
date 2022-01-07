@@ -1,0 +1,80 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+.contact-us {
+    @extend .blue-gradient;
+    color: $white;
+
+    .title-section {
+        padding-top: 4rem;
+    }
+
+    .title-section h4 {
+        font-weight: bold;
+        letter-spacing: .5px;
+    }
+
+    .contact-form{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 4rem;
+        padding-bottom: 4rem;
+        max-width: 600px;
+    }
+
+    .contact-form input[type=text], input[type="email"], textarea {
+        border: none;
+        outline: none;
+        background-color: rgba(255,255,255,.3);
+        padding: .8rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        color: $space-grey;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $white;
+        opacity: 1; /* Firefox */
+      }
+      
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $white;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $white;
+    }
+
+    .checkbox-container {
+        background-color: rgba(255,255,255,.3);
+        padding: .8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .checkbox-container h3 {
+        font-size: $fs-extra-small;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .form-option {
+        margin-bottom: .5rem;
+    }
+    .form-option label{
+        margin-left: 8px;
+        font-family: $primary-font;
+        color: $space-grey;
+        cursor: pointer;
+    }
+
+    .contact-form input[type=submit] {
+        padding: 1rem 2rem;
+        font-family: $primary-font;
+        font-weight: bold;
+        background-color: #48EDB8;
+        border: none;
+        @extend .dark-shadow;
+        cursor: pointer;
+    }
+}
