@@ -210,4 +210,36 @@ img {
   border: none;
   cursor: pointer;
 }
+
+.contact-us .form-errors {
+  background-color: #da2f2f;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.contact-us .success-message {
+  background-color: #48EDB8;
+  color: #f1f1f1;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 201;
+}
+
+.contact-us .success-message p {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-us .success-message h2 {
+    font-size: 1.2rem;
+  }
+}
 /*# sourceMappingURL=ContactUs.css.map */
