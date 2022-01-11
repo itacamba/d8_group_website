@@ -69,13 +69,7 @@
     }
 
     .contact-form input[type=submit] {
-        padding: 1rem 2rem;
-        font-family: $primary-font;
-        font-weight: bold;
-        background-color: $green;
-        border: none;
-        @extend .dark-shadow;
-        cursor: pointer;
+        @extend .green-button;
     }
 
     .form-errors{

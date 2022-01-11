@@ -17,6 +17,10 @@ const Navbar = () => {
             url: '/about'
         },
         {
+            name: 'Clients',
+            url: '/clients'
+        },
+        {
             name: 'Leadership',
             url: '/leadership'
         },

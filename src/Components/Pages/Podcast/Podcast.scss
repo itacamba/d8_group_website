@@ -1,0 +1,9 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+.podcast {
+
+    .green-btn {
+        @extend .green-button;
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../../../Styles/variables';
+@import '../../../../Styles/index';
+
+.founder{
+    @extend .section-padding-top-bottom;
+
+    .video {
+        @extend .container;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+}

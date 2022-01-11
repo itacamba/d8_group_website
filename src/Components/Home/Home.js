@@ -6,6 +6,7 @@ import CallToAction from './Home-Components/CallToAction/CallToAction';
 import UpcomingEvents from './Home-Components/UpcomingEvents/UpcomingEvents';
 import WhyUs from './Home-Components/WhyUs/WhyUs';
 import Title from '../Shared/Title/Title'
+import Founder from './Home-Components/Founder/Founder';
 
 const Home = () => {
 
@@ -32,8 +33,8 @@ const Home = () => {
                 <Title heading="OUR SERVICES" mainTitle="BUSINESS DEVELOPMENT AS A SERVICE"/>
                 <CarouselHorizontal/>
             </div>
-
             <CallToAction/>
+            <Founder/>
             <WhyUs/>
             <UpcomingEvents/>
 

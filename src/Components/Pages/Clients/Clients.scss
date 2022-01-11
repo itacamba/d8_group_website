@@ -1,0 +1,38 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+.clients {
+ @extend .blue-gradient;
+ color: $white;
+
+ .title-section{
+     padding-top: 4rem;
+ }
+
+ .title-section h3 {
+     margin-top: 0;
+ }
+
+ .flex-gallery {
+     margin-top: 2rem;
+ }
+
+ .gallery-card {
+    background-color: rgba(255,255,255,.3);
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+ }
+ .gallery-card-img {
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+ .gallery-card-img img{
+    width: 100%;
+    height: auto;
+ }
+}
