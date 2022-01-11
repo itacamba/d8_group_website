@@ -1,0 +1,61 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+.carousel-slick{
+    @extend .blue-gradient;
+    overflow-x: hidden;
+
+
+    .each-slide{
+        border-right: 0;
+        height: 100px;
+    }
+
+    .slick-slide img{
+        height: auto;
+        width: 150px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .tall img {
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .carousel-slick {
+
+        .each-slide{
+            height: 80px;
+        }
+
+        .slick-slide img{
+            width: 100px;
+        }
+
+        .tall img {
+            width: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .carousel-slick {
+
+        .each-slide{
+            height: 60px;
+        }
+
+        .slick-slide img{
+            width: 70px;
+        }
+
+        .tall img {
+            width: 50px;
+        }
+    }
+}

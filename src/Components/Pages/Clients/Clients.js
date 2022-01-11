@@ -2,6 +2,7 @@ import React from 'react';
 import PageHeading from '../../Shared/PageHeading/PageHeading';
 import './Clients.css'
 import '../../SharedStyles/FlexGallery/FlexGallery.css'
+// top clients
 import Title from '../../Shared/Title/Title';
 import CACI from '../../../Images/client_logos/caci.png'
 import CSRA from '../../../Images/client_logos/csra.png'
@@ -16,6 +17,7 @@ import Octo from '../../../Images/client_logos/octo.png'
 import SnapNurse from '../../../Images/client_logos/snapNurse.png'
 import Teradata from '../../../Images/client_logos/teradata.png'
 
+// secondary clients
 import Zolon from '../../../Images/client_logos/zolon.png'
 import Vmd from '../../../Images/client_logos/vmd.png'
 import Vital from '../../../Images/client_logos/vital.png'

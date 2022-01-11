@@ -7,6 +7,7 @@ import UpcomingEvents from './Home-Components/UpcomingEvents/UpcomingEvents';
 import WhyUs from './Home-Components/WhyUs/WhyUs';
 import Title from '../Shared/Title/Title'
 import Founder from './Home-Components/Founder/Founder';
+import Carousel from '../Shared/Carousel/Carousel';
 
 const Home = () => {
 
@@ -28,7 +29,7 @@ const Home = () => {
                         <img src={Chessboard} alt="chessboard and queen" />
                 </div>
             </main>
-
+            <Carousel />
             <div className="services">
                 <Title heading="OUR SERVICES" mainTitle="BUSINESS DEVELOPMENT AS A SERVICE"/>
                 <CarouselHorizontal/>
