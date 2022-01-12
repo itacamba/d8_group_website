@@ -64,7 +64,6 @@
         position: relative; // to position the .arrow-right 
     }
 
-
     .horizontal-carousel {
         padding: 0;
         display: flex;
@@ -124,6 +123,18 @@
         left: 2.5em; // same as .carousel-card padding-left
         background-color: #fff;
         @extend .box-shadow-blur;
+    }
+
+    .circle-icon-img {
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .circle-icon-img img{
+        height: 100%;
     }
 
     .carousel-card h2 {
@@ -223,11 +234,12 @@
     #home {
 
         .main-content h2 {
-            font-size: $fs-large * 2;
+            font-size: $fs-large * 1.8;
         }
     
         .main-content h3 {
             font-size: $fs-small;
+            margin-top: 1.5rem;
         }
     
         .main-content p {
@@ -249,7 +261,7 @@
         }
 
         .main-content h2 {
-            font-size: $fs-large * 1.3;
+            font-size: $fs-large;
         }
     
 
@@ -335,18 +347,35 @@
 @media screen and (max-width: 700px){
     #home {
 
-
         p {
             font-size: 14px;
         }
 
+        .gradient-bottom {
+            height: 200px;
+            top: -50%;
+        }
+
+        .main-content{
+            padding-left: 5vw;
+        }
+
+        .main-content p { 
+            width: 100%;
+        }
+
+        .absolute-text {
+            width: 100%;
+        }
         .absolute-text h2 {
             font-size: $fs-extra-small;
+            font-weight: lighter;
             line-height: 1.5rem;
         }
 
         .absolute-text a{
             padding-top: 1rem;
+            font-weight: bold;
         }
     }
 

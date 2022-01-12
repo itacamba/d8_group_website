@@ -171,7 +171,7 @@ const Clients = () => {
             <div className="flex-gallery">
                 {
                     clientsList.map((client, i) => 
-                        <div className='gallery-card'>
+                        <div className='gallery-card' key={i}>
                             <div className="gallery-card-img">
                                 <img src={client.img} alt={client.alt} />
                             </div>

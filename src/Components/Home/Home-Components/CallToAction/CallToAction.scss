@@ -8,12 +8,24 @@
     color: $white;
     @extend .container;
     @extend .section-padding-top-bottom;
+    
+    h2{
+        color: $tiffany;
+    }
+
+    h3 {
+        font-weight: 300;
+    }
 }
 
-.call-to-action-banner h2{
-    color: $tiffany;
-}
 
-.call-to-action-banner h3 {
-    font-weight: 300;
+
+@media screen and (max-width: 700px){
+
+    .call-to-action-banner{
+
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
 }

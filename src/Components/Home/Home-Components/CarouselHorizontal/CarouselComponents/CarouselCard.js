@@ -11,7 +11,9 @@ const CarouselCard = ({service}) => {
     return (
         <div className="carousel-card">
             <div className="card-circle-icon">
-                <div className="img"></div>
+                <div className="circle-icon-img">
+                    <img src={service.img} alt="" />
+                </div>
             </div>
             <h2>{service.title}</h2>
             <h3>{service.subtitle}</h3>

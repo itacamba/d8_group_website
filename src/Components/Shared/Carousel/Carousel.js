@@ -26,7 +26,6 @@ const Carousel = () => {
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
-        dots: true,
         cssEase: "linear",
         responsive: [
             {

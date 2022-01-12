@@ -32,12 +32,6 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-h2 {
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-
 h3 {
   font-size: 1.4rem;
   font-family: "Merriweather", serif;
@@ -62,12 +56,6 @@ p {
 @media screen and (max-width: 1188px) {
   ˝ h3 {
     margin-top: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  h2 {
-    font-size: 2.5rem;
   }
 }
 

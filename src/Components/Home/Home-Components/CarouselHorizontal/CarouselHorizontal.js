@@ -1,5 +1,10 @@
 import React from 'react';
 import CarouselCard from './CarouselComponents/CarouselCard';
+import Pipeline from '../../../../Images/icon_funnel.png';
+import Graduation from '../../../../Images/icon_graduation.png';
+import Target from '../../../../Images/icon_target.png';
+import Strategy from '../../../../Images/icon_strategy.png';
+
 
 const CarouselHorizontal = () => {
 
@@ -15,6 +20,7 @@ const CarouselHorizontal = () => {
             of beating your competition, reduce wasted time and maximize 
             your investments of time and resources.`,
             readMore: true,
+            img: Pipeline
         },
         {
             title: 'CAPTURE SUPPORT',
@@ -25,6 +31,7 @@ const CarouselHorizontal = () => {
             customer pain points, facilitate introductions to key 
             stake holders, and more.`,
             readMore: false,
+            img: Target
         },
         {
             title: 'SB GRADUATION',
@@ -37,6 +44,7 @@ const CarouselHorizontal = () => {
             introduces you to the next generation of small business 
             protégé companies.`,
             readMore: false,
+            img: Graduation
         },
         {
             title: 'STRATEGY',
@@ -48,6 +56,7 @@ const CarouselHorizontal = () => {
             specified period of time. Make your logical investments and 
             action plans accordingly. `,
             readMore: false,
+            img: Strategy
         },
     ]
 
