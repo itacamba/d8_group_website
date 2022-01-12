@@ -14,6 +14,12 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
 h3 {
   font-size: 1.4rem;
   font-family: "Merriweather", serif;
@@ -38,6 +44,12 @@ p {
 @media screen and (max-width: 1188px) {
   ˝ h3 {
     margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 1.8rem;
   }
 }
 
@@ -160,6 +172,10 @@ img {
   margin-bottom: .5rem;
 }
 
+.events .event-info a {
+  font-weight: bold;
+}
+
 .events .no-events {
   padding: 1rem;
   padding-left: 5vw;
@@ -187,6 +203,7 @@ img {
             flex-direction: column-reverse;
   }
   .events .event-img {
+    margin-top: 2rem;
     width: 70%;
   }
   .events .event-info {

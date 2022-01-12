@@ -38,8 +38,10 @@ const Events = () => {
                         - George Goodwin | 
                         <a href="https://www.linkedin.com/in/george-goodwin/"> LinkedIn</a>
                         </li>
+                        <li>
                         - Reeba Magulick | 
                         <a href="https://www.linkedin.com/in/reeba-magulick/"> LinkedIn</a>
+                        </li>
                     </ul>
                     <h3>Topics:</h3>
                     <ul>
@@ -71,15 +73,17 @@ const Events = () => {
                     <h3>Speakers:</h3>
                     <ul>
                         <li>
-                        - Gregory (Greg) Giddens  | 
-                        <a href="https://www.linkedin.com/in/greg-giddens/"> LinkedIn</a>
+                            - Gregory (Greg) Giddens  | 
+                            <a href="https://www.linkedin.com/in/greg-giddens/"> LinkedIn</a>
+                        </li>
+                            <li>
+                            - Marion Vanzie  | 
+                            <a href="https://www.linkedin.com/in/marion-vanzie-859b342b/"> LinkedIn</a>
                         </li>
                         <li>
-                        - Marion Vanzie  | 
-                        <a href="https://www.linkedin.com/in/marion-vanzie-859b342b/"> LinkedIn</a>
+                            - Reeba Magulick | 
+                            <a href="https://www.linkedin.com/in/reeba-magulick/"> LinkedIn</a>
                         </li>
-                        - Reeba Magulick | 
-                        <a href="https://www.linkedin.com/in/reeba-magulick/"> LinkedIn</a>
                     </ul>
                     <h3>Topics:</h3>
                     <ul>

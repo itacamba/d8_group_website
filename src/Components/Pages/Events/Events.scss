@@ -50,6 +50,10 @@
         margin-bottom: .5rem;
     }
 
+    .event-info a{
+        font-weight: bold;
+    }
+
     .no-events{
         padding: 1rem;
         padding-left: 5vw;
@@ -71,6 +75,7 @@
         }
 
         .event-img{
+            margin-top: 2rem;
             width: 70%;
         }
 

@@ -16,6 +16,8 @@ import IronBow from '../../../Images/client_logos/ironBow.png'
 import Octo from '../../../Images/client_logos/octo.png'
 import SnapNurse from '../../../Images/client_logos/snapNurse.png'
 import Teradata from '../../../Images/client_logos/teradata.png'
+import Attain from '../../../Images/client_logos/attain.png';
+
 
 // secondary clients
 import Zolon from '../../../Images/client_logos/zolon.png'
@@ -36,6 +38,28 @@ import NVE from '../../../Images/client_logos/nve.png'
 import Int from '../../../Images/client_logos/int.png'
 import Innovate from '../../../Images/client_logos/innovate.png'
 import IndraSoft from '../../../Images/client_logos/indrasoft.png'
+
+// third upload
+import Akytech from '../../../Images/client_logos/akytech.png';
+import AmericanSys from '../../../Images/client_logos/american_sys.png';
+import Aminad from '../../../Images/client_logos/aminad.png';
+import Arlo from '../../../Images/client_logos/arlo.png';
+import Asm from '../../../Images/client_logos/asm.png';
+import Aspetto from '../../../Images/client_logos/aspetto.png';
+import Consensus from '../../../Images/client_logos/consensus.png';
+import Core4ce from '../../../Images/client_logos/core_4ce.png';
+import EmagineIt from '../../../Images/client_logos/emagine_it.png';
+import Erpi from '../../../Images/client_logos/erpi.png';
+import Excelicon from '../../../Images/client_logos/excelicon.png';
+import Fedtrax from '../../../Images/client_logos/fedtrax.png';
+import FMTalent from '../../../Images/client_logos/fmTalent.png';
+import Focusing from '../../../Images/client_logos/focusing.png';
+import Forward from '../../../Images/client_logos/forward.png';
+import Fsr from '../../../Images/client_logos/fsr.png';
+import Galapagos from '../../../Images/client_logos/galapagos.png';
+import Hinz from '../../../Images/client_logos/hinz.png';
+
+
 
 
 
@@ -64,6 +88,10 @@ const Clients = () => {
             alt: 'Leidos Logo white'
         },
         {
+            img: Attain,
+            alt: 'Attain Logo white'
+        },
+        {
             img: Govcio,
             alt: 'GovCIO Logo white'
         },
@@ -84,6 +112,10 @@ const Clients = () => {
             alt: 'OCTO Logo white'
         },
         {
+            img: Zolon,
+            alt: 'Zolon Logo white'
+        },
+        {
             img: SnapNurse,
             alt: 'Snap Nurse Logo white'
         },
@@ -92,13 +124,14 @@ const Clients = () => {
             alt: 'CURE Logo white'
         },
         {
-            img: Zolon,
-            alt: 'Zolon Logo white'
-        },
-        {
             img: Vmd,
             alt: 'VMD Logo white'
         },
+        {
+            img: Galapagos,
+            alt: 'Galapagos Logo white'
+        },
+
         {
             img: Vital,
             alt: 'Vital Logo white'
@@ -112,24 +145,20 @@ const Clients = () => {
             alt: 'Unissant Logo white'
         },
         {
-            img: Triple,
-            alt: 'Triple Cyber Logo white'
+            img: Rally,
+            alt: 'Rally Point Logo white'
         },
         {
             img: Synap,
             alt: 'SynapOne Logo white'
         },
         {
-            img: SilverFern,
-            alt: 'SilverFern Logo white'
+            img: Nvr,
+            alt: 'NVR Logo white'
         },
         {
             img: RpPro,
             alt: 'Rp Pro Logo white'
-        },
-        {
-            img: Rally,
-            alt: 'Rally Point Logo white'
         },
         {
             img: Qbe,
@@ -144,24 +173,96 @@ const Clients = () => {
             alt: 'Panum Logo white'
         },
         {
-            img: Nvr,
-            alt: 'NVR Logo white'
+            img: Triple,
+            alt: 'Triple Cyber Logo white'
         },
         {
             img: NVE,
             alt: 'NVE INC Logo white'
         },
         {
-            img: Int,
-            alt: 'Int Logo white'
+            img: SilverFern,
+            alt: 'SilverFern Logo white'
         },
         {
             img: Innovate,
             alt: 'Innovate Logo white'
         },
         {
+            img: Arlo,
+            alt: 'Arlo Solutions Logo white'
+        },
+        {
+            img: FMTalent,
+            alt: 'FM Talent Logo white'
+        },
+        {
+            img: Int,
+            alt: 'Int Logo white'
+        },
+        {
             img: IndraSoft,
             alt: 'Indra Soft Logo white'
+        },
+        {
+            img: Akytech,
+            alt: 'AkyTech Logo white'
+        },
+        {
+            img: AmericanSys,
+            alt: 'American Systems Logo white'
+        },
+        {
+            img: Aminad,
+            alt: 'Aminad Logo white'
+        },
+        {
+            img: Asm,
+            alt: 'ASM Research Logo white'
+        },
+        {
+            img: Aspetto,
+            alt: 'Aspetto Logo white'
+        },
+        {
+            img: Consensus,
+            alt: 'Consensus Solutions Logo white'
+        },
+        {
+            img: Focusing,
+            alt: 'Focusing Forward Consulting Logo white'
+        },
+        {
+            img: Core4ce,
+            alt: 'Core 4ce Logo white'
+        },
+        {
+            img: EmagineIt,
+            alt: 'Emagine It Logo white'
+        },
+        {
+            img: Excelicon,
+            alt: 'Excelicon Logo white'
+        },
+        {
+            img: Fedtrax,
+            alt: 'FedTrax Logo white'
+        },
+        {
+            img: Forward,
+            alt: 'Forward Logo white'
+        },
+        {
+            img: Erpi,
+            alt: 'ERPi Logo white'
+        },
+        {
+            img: Fsr,
+            alt: 'FSR Logo white'
+        },
+        {
+            img: Hinz,
+            alt: 'Hinz Logo white'
         },
     ]
     return (

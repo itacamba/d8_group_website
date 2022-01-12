@@ -96,7 +96,7 @@ const Podcast = () => {
             <PageHeading heading="The New Way to Win!" content="A Podcast by Reeba Magulick"/>
                 {
                     guestList.map((guest, i) =>
-                     <div className="two-col">
+                     <div className="two-col" key={i}>
                         <div className="col-img">
                             <img src={guest.img} alt={guest.alt} />
                         </div>

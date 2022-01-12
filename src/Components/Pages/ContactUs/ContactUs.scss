@@ -70,6 +70,7 @@
 
     .contact-form input[type=submit] {
         @extend .green-button;
+        -webkit-appearance: none;
     }
 
     .form-errors{
