@@ -3,6 +3,11 @@
 
 .founder{
     @extend .section-padding-top-bottom;
+    background-color: $light-tiff;
+    
+    h2 {
+        color: $black;
+    }
 
     .video {
         @extend .container;

@@ -63,7 +63,7 @@ p {
   box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
 }
 
-.box-shadow-blur, .two-col:nth-child(even) .col-img {
+.box-shadow-blur {
   -webkit-box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
   box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
 }
@@ -96,7 +96,7 @@ p {
   cursor: pointer;
 }
 
-.section-padding-top-bottom, .two-col {
+.section-padding-top-bottom {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -130,96 +130,94 @@ img {
   padding-right: 5vw;
 }
 
-.two-col {
-  padding-left: 5vw;
-  padding-right: 5vw;
+.services h2 {
+  margin: 0;
+}
+
+.services .service-cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.two-col:nth-child(odd) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  background-color: #13181C;
-  color: #f1f1f1;
+.services .service-cols h4 {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #13181C;
 }
 
-.col img {
+.services .title-section {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.services .title-section h4 {
+  font-weight: 400;
+}
+
+.services .service-info {
+  width: 50%;
+  padding: 2rem;
+}
+
+.services .service-graphic {
+  width: 50%;
+}
+
+.services .service-graphic img {
   width: 100%;
 }
 
-.col-img {
-  width: 48%;
+@media screen and (max-width: 975px) {
+  .services p {
+    font-size: 1rem;
+  }
+  .services .service-cols {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .services .service-graphic {
+    width: 40%;
+  }
+  .services .service-info {
+    width: 60%;
+    padding: 0;
+  }
+  .services .service-info h2, .services .service-info h4, .services .service-info p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
-.col-img img {
-  width: 100%;
-}
-
-.col-info {
-  width: 48%;
-}
-
-.col-info h5 {
-  font-family: "Playfair Display", serif;
-}
-
-.col-info h4 {
-  margin-top: .5rem;
-}
-
-.col-info h2 {
-  margin-top: 2rem;
-}
-
-.col-info ul {
-  margin-top: .5rem;
-}
-
-.col-info li {
-  margin-bottom: .5rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .two-col {
+@media screen and (max-width: 835px) {
+  .services .service-cols {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    border: none;
   }
-  .two-col:nth-child(odd) {
+  .services .service-cols:nth-child(even) {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-  .col-img {
-    width: 70%;
-  }
-  .col-info {
-    margin-top: 2rem;
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .col-img {
+  .services .service-graphic {
     width: 100%;
   }
-  .col-info {
+  .services .service-info {
     width: 100%;
+    padding: 1.5rem;
+  }
+  .services .service-info h2, .services .service-info h4, .services .service-info p {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-/*# sourceMappingURL=TwoCol.css.map */
+/*# sourceMappingURL=Services.css.map */

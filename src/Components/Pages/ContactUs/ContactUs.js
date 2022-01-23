@@ -123,9 +123,9 @@ const ContactUs = () => {
         <div className='contact-us'>
             <PageHeading heading="Connect with d8 Group" content="Contact us today! We are ready to throw all our resources behind you to help you win."/>
             <Title 
-                heading="CONTACT US" 
-                subtitle="Request Engagement Information"
-                paragraph="Receive the Latest Updates from d8 Group!"
+                heading="contact us" 
+                subtitle="Request engagement iformation"
+                paragraph="receive the latest updates from d8 Group!"
             />
             {
                 success? 

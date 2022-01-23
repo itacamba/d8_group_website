@@ -25,9 +25,9 @@
 
 .page-heading-content {
     @extend .container;
-    color: #fff;
+    color: $white;
     position:relative;
-    z-index: 1;
+    z-index: $z-3;
 }
 
 .page-heading-content p {

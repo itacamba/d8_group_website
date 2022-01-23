@@ -42,7 +42,7 @@ const WhyUs = () => {
 
     return (
         <div className='why-us'>
-           <Title heading="CHECKMATE" title="WHY CHOOSE US"/>
+           <Title heading="why choose us" title="What makes us different"/>
             <div className="flex-gallery">
                 {
                     skills.map((skill, i) => 

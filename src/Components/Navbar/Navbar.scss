@@ -17,10 +17,10 @@
 
   .logo-container{
     min-width: 4vw; //the smallest it will ever be
-    max-width: 45px;
-    width: 30vw;
+    max-width: 120px;
     cursor: pointer;
   }
+
   .logo-img{
       width: 100%;
       display: block;
@@ -40,13 +40,12 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
-    z-index: 102;
   }
 
   .menu-line{
     height: 2px;
     width: 100%;
-    background-color: #09AED6;
+    background-color: $tiffany;
     border-radius: 5px;
     transition: all .3s ease-in-out; // makes transition work on hover-off
   }
@@ -80,13 +79,14 @@
   }
 
   .menu {
-    width: 100%;
-    background-color: #f1f1f1;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     height: 100vh;
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
-    z-index: 102;
+    z-index: $z-1;
   }
 
   .menu.hide {
@@ -94,14 +94,14 @@
   }
 
   .menu.disappear{
-    animation-name: slideToTop;
+    animation-name: slideToRight;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-delay: .5s;
   }
 
   .menu.show {
-    animation-name: slideFromTop;
+    animation-name: slideFromRight;
     animation-duration: 1s;
     animation-fill-mode: backwards;
     animation-delay: .5s;
@@ -116,8 +116,8 @@
     width: 50px;
     height: 50px;
     float: right;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 30px;
+    margin-right: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@
     width: 40px;
     height: 2px;
     position:absolute; // makes sure both lines start at the same position(0,0)
-    background-color: #000;
+    background-color: $tiffany;
   }
 
   .x-line:first-child.show{
@@ -158,13 +158,23 @@
 
 
   
-  @keyframes slideFromTop {
+  @keyframes slideFromRight {
     from {
-      transform: translateY(-100%);
+      transform: translateX(100%);
     }
   
     to {
-      transform: translateY(0);
+      transform: translate(0%);
+    }
+  }
+
+  @keyframes slideToRight {
+    from {
+      transform: translate(0%);
+    }
+
+    to {
+      transform: translateX(100%);
     }
   }
 
@@ -219,8 +229,7 @@
   }
 
   h2{
-    @extend .title;
-    font-size: $fs-xl;
+    font-size: $fs-large;
     padding-left: 2.5vw;
     padding-top: 18px;
   }
@@ -235,13 +244,13 @@
   }
   
   .menu ul li a{
-    font-size: $fs-xl;
-    color: $space-grey;
+    font-size: $fs-medium;
+    color: $white;
     transition: all .3s ease-in-out; // added transition so it works on hover/off
   }
 
   .menu ul li a:hover{
-    color: $black;
+    color: $tiffany;
     transition: all .3s ease-in-out;
   }
 }
@@ -258,11 +267,11 @@
     }
 
     h2{
-      font-size: $fs-s;
+      font-size: $fs-small;
     }
 
     .menu ul li a{
-      font-size: $fs-s;
+      font-size: $fs-small;
     }
   }
 }
@@ -270,11 +279,11 @@
 @media screen and (max-width: 400px){
   #nav{
     h2{
-      font-size: $fs-xs;
+      font-size: $fs-extra-small;
     }
 
     .menu ul li a{
-      font-size: $fs-xs;
+      font-size: $fs-extra-small;
     }
   }
 }

@@ -11,28 +11,30 @@
         height: 700px;
         overflow: hidden;
         position: relative;
-        z-index: -1;
     }
 
     .main-content{
-        @extend .container;
+        padding-left: 15vw;
         padding-top: 80px;
         position: relative; // for the z-index and the chessboard-img to work.
-        z-index: 102;
-        padding-left: 40px
+        z-index: $z-2;
     }
 
     .main-content h2 {
-        font-size: $fs-large * 2.5;
+        font-size: $fs-large * 1.2;
     }
 
     .main-content h3 {
-        font-size: $fs-small * 1.5;
+        font-size: $fs-small * 1.3;
+        color: $tiffany;
     }
 
     .main-content p {
         width: 40%;
-        font-size: $fs-extra-small;
+    }
+
+    .main-content .action-btn {
+        @extend .main-button;
     }
 
     .gradient-bottom {
@@ -56,12 +58,6 @@
 
     .chessboard-img img{
         width: 100%;
-    }
-
-    .services {
-        @extend .section-padding-top-bottom;
-        background-color: #efefef;
-        position: relative; // to position the .arrow-right 
     }
 
     .horizontal-carousel {
@@ -238,7 +234,6 @@
         }
     
         .main-content h3 {
-            font-size: $fs-small;
             margin-top: 1.5rem;
         }
     
@@ -312,10 +307,6 @@
             width: 80%;
         }
 
-        .services {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
 
         .horizontal-carousel {
             flex-direction: column;

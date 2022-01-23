@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600;700&display=swap");
 * {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -11,19 +11,22 @@
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+  letter-spacing: .3px;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
+  letter-spacing: .5px;
 }
 
 h3 {
   font-size: 1.4rem;
-  font-family: "Merriweather", serif;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   margin-top: 2.5rem;
   line-height: 1.9rem;
 }
@@ -32,13 +35,15 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  letter-spacing: .3px;
 }
 
 p {
   margin-top: 1rem;
   line-height: 1.8rem;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1188px) {
@@ -70,10 +75,10 @@ p {
 
 .main-button {
   text-align: center;
-  background-color: #09AED6;
+  background-color: #88DBFF;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: black;
+  color: #13181C;
   padding: 1em 2.5em;
   display: inline-block;
   text-transform: uppercase;
@@ -84,7 +89,7 @@ p {
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
   background-color: #48EDB8;
   border: none;
@@ -94,6 +99,11 @@ p {
 .section-padding-top-bottom, .call-to-action-banner {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.pad-sides {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .blue-gradient {
@@ -122,12 +132,13 @@ img {
 
 .call-to-action-banner {
   width: 100%;
-  background-color: #000000;
+  background-color: #13181C;
   color: #f1f1f1;
 }
 
 .call-to-action-banner h2 {
-  color: #09AED6;
+  color: #88DBFF;
+  text-transform: none;
 }
 
 .call-to-action-banner h3 {

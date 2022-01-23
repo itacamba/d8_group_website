@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600;700&display=swap");
 * {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -11,19 +11,22 @@
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+  letter-spacing: .3px;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
+  letter-spacing: .5px;
 }
 
 h3 {
   font-size: 1.4rem;
-  font-family: "Merriweather", serif;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   margin-top: 2.5rem;
   line-height: 1.9rem;
 }
@@ -32,13 +35,15 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  letter-spacing: .3px;
 }
 
 p {
   margin-top: 1rem;
   line-height: 1.8rem;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1188px) {
@@ -53,7 +58,7 @@ p {
   }
 }
 
-.box-shadow-sharp, #home .carousel-card:hover, #home .col-product .main-button {
+.box-shadow-sharp, #home .carousel-card:hover, #home .col-product .main-content .action-btn, #home .main-content .col-product .action-btn, #home .col-product .main-button {
   -webkit-box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
   box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
 }
@@ -68,12 +73,12 @@ p {
   box-shadow: 0px 5px 12px -2px rgba(140, 140, 140, 0.82);
 }
 
-.main-button, #home .main-button {
+.main-button, #home .main-content .action-btn, #home .main-button {
   text-align: center;
-  background-color: #09AED6;
+  background-color: #88DBFF;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: black;
+  color: #13181C;
   padding: 1em 2.5em;
   display: inline-block;
   text-transform: uppercase;
@@ -84,16 +89,21 @@ p {
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
   background-color: #48EDB8;
   border: none;
   cursor: pointer;
 }
 
-.section-padding-top-bottom, #home .services, #home .upcoming-events-container, #home .why-us {
+.section-padding-top-bottom, #home .upcoming-events-container, #home .why-us {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.pad-sides {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .blue-gradient {
@@ -115,7 +125,7 @@ img {
   display: block;
 }
 
-.container, #home .main-content, #home .absolute-text {
+.container, #home .absolute-text {
   padding-left: 5vw;
   padding-right: 5vw;
 }
@@ -126,27 +136,26 @@ img {
   height: 700px;
   overflow: hidden;
   position: relative;
-  z-index: -1;
 }
 
 #home .main-content {
+  padding-left: 15vw;
   padding-top: 80px;
   position: relative;
-  z-index: 102;
-  padding-left: 40px;
+  z-index: 50;
 }
 
 #home .main-content h2 {
-  font-size: 6.25rem;
+  font-size: 3rem;
 }
 
 #home .main-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.56rem;
+  color: #88DBFF;
 }
 
 #home .main-content p {
   width: 40%;
-  font-size: 1rem;
 }
 
 #home .gradient-bottom {
@@ -169,11 +178,6 @@ img {
 
 #home .chessboard-img img {
   width: 100%;
-}
-
-#home .services {
-  background-color: #efefef;
-  position: relative;
 }
 
 #home .horizontal-carousel {
@@ -255,7 +259,7 @@ img {
 }
 
 #home .carousel-card h2 {
-  color: #09AED6;
+  color: #88DBFF;
   margin-top: 20px;
 }
 
@@ -273,7 +277,7 @@ img {
   border: none;
   outline: none;
   background: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 300;
   font-size: 1rem;
   color: #aaaaaa;
@@ -323,7 +327,7 @@ img {
 #home .absolute-text a {
   display: inline-block;
   padding-top: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   color: #f1f1f1;
 }
@@ -334,7 +338,7 @@ img {
 }
 
 #home .why-us {
-  background-color: #000000;
+  background-color: #13181C;
   color: #f1f1f1;
 }
 
@@ -343,7 +347,6 @@ img {
     font-size: 4.5rem;
   }
   #home .main-content h3 {
-    font-size: 1.2rem;
     margin-top: 1.5rem;
   }
   #home .main-content p {
@@ -403,10 +406,6 @@ img {
   }
   #home .main-content p {
     width: 80%;
-  }
-  #home .services {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
   #home .horizontal-carousel {
     -webkit-box-orient: vertical;

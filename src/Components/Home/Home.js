@@ -1,13 +1,14 @@
 import React from 'react';
 import "./Home.css"
 import Chessboard from '../../Images/chessboard.png'
-import CarouselHorizontal from './Home-Components/CarouselHorizontal/CarouselHorizontal';
+// import CarouselHorizontal from './Home-Components/CarouselHorizontal/CarouselHorizontal';
 import CallToAction from './Home-Components/CallToAction/CallToAction';
 import UpcomingEvents from './Home-Components/UpcomingEvents/UpcomingEvents';
 import WhyUs from './Home-Components/WhyUs/WhyUs';
-import Title from '../Shared/Title/Title'
+// import Title from '../Shared/Title/Title'
 import Founder from './Home-Components/Founder/Founder';
 import Carousel from '../Shared/Carousel/Carousel';
+import Services from './Home-Components/Services/Services';
 
 const Home = () => {
 
@@ -23,17 +24,19 @@ const Home = () => {
                     positions you to ethically win the contract award.
                     
                     </p>
+                    <a href="/contact" className="action-btn">Get Started</a>
                 </div>
                 <div className="gradient-bottom"></div>
                 <div className="chessboard-img">
-                        <img src={Chessboard} alt="chessboard and queen" />
+                    <img src={Chessboard} alt="chessboard and queen" />
                 </div>
             </main>
             <Carousel />
-            <div className="services">
-                <Title heading="OUR SERVICES" mainTitle="BUSINESS DEVELOPMENT AS A SERVICE"/>
+            <Services />
+            {/* <div className="services">
+                <Title heading="our services" mainTitle="Business development as a service"/>
                 <CarouselHorizontal/>
-            </div>
+            </div> */}
             <CallToAction/>
             <Founder/>
             <WhyUs/>

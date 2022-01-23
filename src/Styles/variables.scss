@@ -1,56 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600;700&display=swap');
 
 * {
-    font-family: 'Merriweather', serif; 
+    font-family: 'Montserrat', sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
 }
 
-
 //fonts
 $fs-large: 2.5rem;
 $fs-medium: 2rem;
 $fs-small: 1.2rem;
 $fs-extra-small: 1rem;
+
+// font weight
+$fw-reg: 400; // only applies to Montserrat
+$fw-sb: 600; // applies to both
+$fw-b: 700; // appliest to both
+ 
 //font-families
-$primary-font: 'Montserrat', sans-serif;
-$secondary-font: 'Merriweather', serif;
+$primary-font: 'Playfair Display', serif;
+$secondary-font: 'Montserrat', sans-serif;
 
-
+// z-index
+$z-1: 100;
+$z-2: 50;
+$z-3: 0;
 
 // headers
 h1 {
     font-size: $fs-large;
     font-family: $primary-font;
+    letter-spacing: .3px;
+    font-weight: $fw-b;
 }
 
 h2 {
     font-size: $fs-medium;
     font-family: $primary-font;
-    font-weight: 700;
+    font-weight: $fw-b;
+    letter-spacing: .5px;
 }
 
 h3 {
     font-size: $fs-small + .2;
     font-family: $secondary-font;
-    font-weight: 700;
+    font-weight: $fw-sb;
     margin-top: 2.5rem;
     line-height: 1.9rem;
 }
 
 h4 {
-    font-family: $primary-font;
-    font-weight: 400;
+    font-family: $secondary-font;
+    font-weight: $fw-reg;
     text-transform: uppercase;
-    font-size: $fs-small;
+    font-size: $fs-extra-small;
+    letter-spacing: .3px;
 }
 
 p {
     margin-top: 1rem;
     line-height: 1.8rem;
     font-size: $fs-small;
+    font-weight: $fw-reg;
 }   
 
 @media screen and (max-width: 1188px){
@@ -71,11 +84,13 @@ p {
 
 
 // colors 
-$black: #000000;
+$black: #13181C;
 $white: #f1f1f1;
 $space-grey: #4B4B4C;
 $light-grey: #aaaaaa;
-$tiffany: #09AED6;
+// $tiffany: #09AED6;
+$tiffany: #88DBFF;
+$light-tiff: #D5F1FE;
 $green: #48EDB8;
 $yellow: #EDCF34;
 
@@ -98,13 +113,12 @@ $yellow: #EDCF34;
 
 
 // buttons
-
 .main-button {
     text-align: center;
     background-color: $tiffany;
-    font-family: $primary-font;
-    font-weight: 600;
-    color: black;
+    font-family: $secondary-font;
+    font-weight: $fw-sb;
+    color: $black;
     padding: 1em 2.5em;
     display: inline-block;
     text-transform: uppercase;
@@ -127,6 +141,11 @@ $yellow: #EDCF34;
 .section-padding-top-bottom{
     padding-top: 6rem;
     padding-bottom: 6rem;
+}
+
+.pad-sides {
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 // gradients

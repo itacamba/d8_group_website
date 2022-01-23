@@ -20,6 +20,10 @@
     @extend .box-shadow-blur ;
 }
 
+.col img {
+    width: 100%;
+}
+
 .col-img {
     width: 48%;
 }
