@@ -46,7 +46,12 @@
 
     .page-heading {
         background-image: url(../../../Images/page_heading.jpeg);
-        background-position: bottom bottom;
+        background-position: bottom;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-attachment: scroll;
     }
 }
 // .page-heading{
