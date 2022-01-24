@@ -64,7 +64,7 @@ const Footer = () => {
                             <a href="/podcast">Podcast</a>
                         </div>
                         <div>
-                            <p className='footer-menu-title'>Contact Us</p>
+                            <p className='footer-menu-title'>Get in Touch</p>
                             <div className='footer-info'>
                                 <i className="fas fa-phone-alt"></i>
                                 <p>1-833-384-7687</p>

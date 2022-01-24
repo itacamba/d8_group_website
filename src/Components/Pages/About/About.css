@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   margin-top: 2.5rem;
@@ -42,7 +42,7 @@ h4 {
 p {
   margin-top: 1rem;
   line-height: 1.8rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
@@ -112,6 +112,81 @@ p {
   background: linear-gradient(90deg, #45bedc 0%, #18a3df 100%);
 }
 
+.chess-cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chess-cols h4 {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #13181C;
+}
+
+.chess-info {
+  width: 50%;
+  padding: 2rem;
+}
+
+.chess-graphic {
+  width: 50%;
+}
+
+.chess-graphic img {
+  width: 100%;
+}
+
+@media screen and (max-width: 975px) {
+  .chess-cols {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .chess-graphic {
+    width: 40%;
+  }
+  .chess-info {
+    width: 60%;
+    padding: 0;
+  }
+  .chess-info h2, .chess-info h4, .chess-info p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .chess-cols {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+  }
+  .chess-cols:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .chess-graphic {
+    width: 100%;
+  }
+  .chess-info {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .chess-info h2, .chess-info h4, .chess-info p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 a {
   color: #000000;
   text-decoration: none;
@@ -130,7 +205,27 @@ img {
   padding-right: 5vw;
 }
 
-.about-us .why-us .separator {
-  background-color: #13181C;
+.about-us .why-us {
+  background-color: #D5F1FE;
+}
+
+.about-us .title-section {
+  margin-top: 2rem;
+}
+
+.about-us > p {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  max-width: 60%;
+}
+
+.about-us > p:last-of-type {
+  padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  .about-us > p {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=About.css.map */

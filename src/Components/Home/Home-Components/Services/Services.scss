@@ -3,9 +3,6 @@
 
 .services {
 
-    h2 {
-        margin: 0;
-    }
 
 
     .service-cols {
@@ -22,7 +19,9 @@
 
     .title-section {
         padding: 0;
-        margin-bottom: 2rem;
+        padding-left: 2rem;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .title-section h4 {

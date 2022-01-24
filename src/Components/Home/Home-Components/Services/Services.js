@@ -9,9 +9,9 @@ import Title from '../../../Shared/Title/Title';
 const Services = () => {
     return (
         <div className='services'>
+            <Title heading="our services" mainTitle="Business Development 'As a Service'"/>
             <div className="service-cols">
                 <div className="service-info">
-                    <Title heading="our services" mainTitle="Business Development as a Service"/>
                     <h2>Opportunity Pipeline</h2>
                     <h4>Federal, State and Local </h4>
                     <p>

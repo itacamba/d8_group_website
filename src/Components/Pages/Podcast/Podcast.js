@@ -93,7 +93,7 @@ const Podcast = () => {
     ]
     return (
         <div className='podcast'>
-            <PageHeading heading="The New Way to Win!" content="A Podcast by Reeba Magulick"/>
+            <PageHeading heading="The New Way to Win Podcast" page="Podcast"/>
                 {
                     guestList.map((guest, i) =>
                      <div className="two-col" key={i}>

@@ -11,7 +11,7 @@
 //fonts
 $fs-large: 2.5rem;
 $fs-medium: 2rem;
-$fs-small: 1.2rem;
+$fs-small: 1.1rem;
 $fs-extra-small: 1rem;
 
 // font weight
@@ -152,4 +152,76 @@ $yellow: #EDCF34;
 .blue-gradient {
     background: rgb(69,190,220);
     background: linear-gradient(90deg, rgba(69,190,220,1) 0%, rgba(24,163,223,1) 100%);
+}
+
+// shared 
+.chess-cols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chess-cols h4 {
+    font-weight: $fw-sb;
+    margin-top: 1rem;
+    color: $black;
+}
+
+.chess-info {
+    width: 50%;
+    padding: 2rem;
+}
+
+.chess-graphic {
+    width: 50%;
+}
+
+.chess-graphic img {
+    width: 100%;
+}
+
+@media screen and (max-width: 975px){
+    .chess-cols {
+        border-bottom: 1px solid rgba(0,0,0,.3);
+    }
+
+    .chess-graphic {
+        width: 40%;
+    }
+
+    .chess-info {
+        width: 60%;
+        padding: 0;
+    }
+
+    .chess-info {
+        h2, h4, p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 835px){
+    .chess-cols {
+        flex-direction: column;
+        border: none;
+    }
+
+    .chess-cols:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .chess-graphic {
+        width: 100%;
+    }
+
+    .chess-info {
+        width: 100%;
+        h2, h4, p {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        padding: 1.5rem;
+    }
 }

@@ -3,10 +3,33 @@
 
 
 
-.about-us .why-us{
-    @extend .section-padding-top-bottom;
+.about-us {
+    .why-us{
+        @extend .section-padding-top-bottom;
+        background-color: $light-tiff;
+    }
+
+    .title-section {
+        margin-top: 2rem;
+    }
+
+    > p {
+       padding-left: 5vw;
+       padding-right: 5vw;
+       max-width: 60%;
+    }
+
+    > p:last-of-type {
+        padding-bottom: 4rem;
+    }
+    
 }
 
-.about-us .why-us .separator {
-    background-color: $black;
+@media screen and (max-width: 700px){
+    .about-us {
+        > p {
+           max-width: 100%;
+        }
+        
+    }
 }

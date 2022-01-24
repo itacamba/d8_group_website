@@ -267,7 +267,7 @@ const Clients = () => {
     ]
     return (
         <div className='clients'>
-            <PageHeading heading="Our Trusted Clients" content="Below we present a list with our most trusted  over the past 5 years."/>
+            <PageHeading heading="Our Trusted Clients" page="Clients"/>
             <Title heading="our clients" subtitle="d8 group's trusted clients"/>
             <div className="flex-gallery">
                 {

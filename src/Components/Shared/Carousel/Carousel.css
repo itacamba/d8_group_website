@@ -106,7 +106,7 @@ p {
   padding-right: 5vw;
 }
 
-.blue-gradient, .carousel-slick {
+.blue-gradient {
   background: #45bedc;
   background: -webkit-gradient(linear, left top, right top, from(#45bedc), to(#18a3df));
   background: linear-gradient(90deg, #45bedc 0%, #18a3df 100%);
@@ -137,6 +137,12 @@ img {
 .carousel-slick .each-slide {
   border-right: 0;
   height: 100px;
+}
+
+.carousel-slick .slick-slide > div {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin: 0 2px;
 }
 
 .carousel-slick .slick-slide img {

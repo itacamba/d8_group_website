@@ -2,13 +2,18 @@
 @import '../../../Styles/index';
 
 .carousel-slick{
-    @extend .blue-gradient;
     overflow-x: hidden;
-
 
     .each-slide{
         border-right: 0;
         height: 100px;
+    }
+
+
+    .slick-slide > div{
+        background-color: rgba(255,255,255,.1);
+        border-radius: 5px;
+        margin: 0 2px;
     }
 
     .slick-slide img{

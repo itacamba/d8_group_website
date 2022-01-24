@@ -60,6 +60,16 @@
         width: 100%;
     }
 
+    .home-clients {
+        background-color: $black;
+        padding-bottom: 2rem;
+        color: $white;
+    }
+
+    .home-clients h4 {
+        margin-bottom: 0;
+    }
+
     .horizontal-carousel {
         padding: 0;
         display: flex;

@@ -121,7 +121,7 @@ const ContactUs = () => {
     
     return (
         <div className='contact-us'>
-            <PageHeading heading="Connect with d8 Group" content="Contact us today! We are ready to throw all our resources behind you to help you win."/>
+            <PageHeading heading="Connect with d8 Group" page="Contact Us"/>
             <Title 
                 heading="contact us" 
                 subtitle="Request engagement iformation"

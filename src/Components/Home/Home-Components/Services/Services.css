@@ -130,10 +130,6 @@ img {
   padding-right: 5vw;
 }
 
-.services h2 {
-  margin: 0;
-}
-
 .services .service-cols {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,7 +150,9 @@ img {
 
 .services .title-section {
   padding: 0;
-  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .services .title-section h4 {

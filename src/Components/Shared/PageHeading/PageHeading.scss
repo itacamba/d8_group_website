@@ -1,35 +1,73 @@
 @import '../../../Styles/variables';
 @import '../../../Styles/index';
 
-.page-heading{
-    width: 100%;
-    @extend .container;
-    @extend .section-padding-top-bottom;
-    background-color: $black;
+
+.page-heading {
+    background-image: url(../../../Images/chess_heading.png);
+    background-size: cover;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     position: relative;
-}
 
-.dark-logo {
-    width: 43%;
-    max-width: 300px;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    h2 {
+        color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-.dark-logo img {
-    width: 100%;
-}
+    .heading-links {
+        display: flex;
+        align-items: center;
+        color: $white;
+        padding-left: 5vw;
+        padding-top: 2rem;
+    }
 
-.page-heading-content {
-    @extend .container;
-    color: $white;
-    position:relative;
-    z-index: $z-3;
-}
+    .heading-links a{
+        color: $white;
+        padding-right: 10px;
+    }
 
-.page-heading-content p {
-    max-width: 500px;
+    .heading-links p {
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        font-size: 16px;
+    }
 }
+// .page-heading{
+//     width: 100%;
+//     @extend .container;
+//     @extend .section-padding-top-bottom;
+//     background-color: $black;
+//     position: relative;
+// }
+
+// .dark-logo {
+//     width: 43%;
+//     max-width: 300px;
+//     margin: 0 auto;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+// .dark-logo img {
+//     width: 100%;
+// }
+
+// .page-heading-content {
+//     @extend .container;
+//     color: $white;
+//     position:relative;
+//     z-index: $z-3;
+// }
+
+// .page-heading-content p {
+//     max-width: 500px;
+// }

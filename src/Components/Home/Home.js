@@ -9,6 +9,7 @@ import WhyUs from './Home-Components/WhyUs/WhyUs';
 import Founder from './Home-Components/Founder/Founder';
 import Carousel from '../Shared/Carousel/Carousel';
 import Services from './Home-Components/Services/Services';
+import Title from '../Shared/Title/Title';
 
 const Home = () => {
 
@@ -31,12 +32,11 @@ const Home = () => {
                     <img src={Chessboard} alt="chessboard and queen" />
                 </div>
             </main>
-            <Carousel />
+            <div className="home-clients">
+                <Title heading="our clients" /> 
+                <Carousel />
+            </div>
             <Services />
-            {/* <div className="services">
-                <Title heading="our services" mainTitle="Business development as a service"/>
-                <CarouselHorizontal/>
-            </div> */}
             <CallToAction/>
             <Founder/>
             <WhyUs/>

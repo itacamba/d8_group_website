@@ -1,18 +1,15 @@
 import React from 'react';
 import './PageHeading.css'
-import DarkLogo from '../../../Images/logo_dark.png'
 
 
-const PageHeading = ({heading, content}) => {
+
+const PageHeading = ({heading, page}) => {
     return (
         <div className='page-heading'>
-            <div className="dark-logo">
-                <img src={DarkLogo} alt="d8 Group Dark Logo" />
+            <div className="heading-links">
+                <p><a href="/">Home</a></p> / <p>{page}</p>
             </div>
-            <div className="page-heading-content">
-                <h2>{heading}</h2>
-                <p>{content}</p>
-            </div>
+            <h2>{heading}</h2>
         </div>
         
     );

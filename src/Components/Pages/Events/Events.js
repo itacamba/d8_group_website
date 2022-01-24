@@ -9,10 +9,10 @@ const Events = () => {
             <div className="no-events">
                 <h4>NO UPCOMING EVENTS</h4>
             </div>
-            <PageHeading heading="Previous Events" 
-            content="Learn effective  strategies to do business at VA & DHA.
+            <PageHeading heading="d8 Group Events" page="Events"/>
+            <p>Learn effective  strategies to do business at VA & DHA.
                     d8 Group brings to you key speakers who can help you 
-                    navigate VA and DHA from their own personal experiences."/>
+                    navigate VA and DHA from their own personal experiences.</p>
             <div className="event-container">
                 <div className="event-img">
                     <img src={SecondEvent} alt="Event Poster" />
