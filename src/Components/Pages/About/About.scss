@@ -2,27 +2,12 @@
 @import '../../../Styles/index';
 
 
-
+// .chess-cols have been imported from ./variables
 .about-us {
     .why-us{
         @extend .section-padding-top-bottom;
         background-color: $light-tiff;
     }
-
-    .title-section {
-        margin-top: 2rem;
-    }
-
-    > p {
-       padding-left: 5vw;
-       padding-right: 5vw;
-       max-width: 60%;
-    }
-
-    > p:last-of-type {
-        padding-bottom: 4rem;
-    }
-    
 }
 
 @media screen and (max-width: 700px){

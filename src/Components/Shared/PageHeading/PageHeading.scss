@@ -12,6 +12,8 @@
     position: relative;
 
     h2 {
+        width: 100%;
+        text-align: center;
         color: $white;
         position: absolute;
         top: 50%;
@@ -37,6 +39,13 @@
         padding: 0;
         padding-left: 10px;
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .page-heading {
+        background-position: left bottom;
     }
 }
 // .page-heading{

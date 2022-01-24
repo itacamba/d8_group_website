@@ -53,8 +53,20 @@ p {
 }
 
 @media screen and (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
   h2 {
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
   }
 }
 
@@ -207,20 +219,6 @@ img {
 
 .about-us .why-us {
   background-color: #D5F1FE;
-}
-
-.about-us .title-section {
-  margin-top: 2rem;
-}
-
-.about-us > p {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  max-width: 60%;
-}
-
-.about-us > p:last-of-type {
-  padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 700px) {

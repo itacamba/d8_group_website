@@ -3,19 +3,19 @@ import Slider from "react-slick";
 import './Carousel.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import CACI from '../../../Images/client_logos/caci.png';
-import Leidos from '../../../Images/client_logos/leidos.png';
-import Teradata from '../../../Images/client_logos/teradata.png';
+import CACI from '../../../Images/client_logos/caci_black.png';
+import Leidos from '../../../Images/client_logos/leidos_black.png';
+import Teradata from '../../../Images/client_logos/teradata_black.png';
 
-import CSRA from '../../../Images/client_logos/csra.png'
-import Cure from '../../../Images/client_logos/cure.png'
-import Dlh from '../../../Images/client_logos/dlh.png'
-import Gdit from '../../../Images/client_logos/gdit.png'
-import Govcio from '../../../Images/client_logos/govcio.png'
-import Honu from '../../../Images/client_logos/honu.png'
-import IronBow from '../../../Images/client_logos/ironBow.png'
-import Octo from '../../../Images/client_logos/octo.png'
-import SnapNurse from '../../../Images/client_logos/snapNurse.png'
+import CSRA from '../../../Images/client_logos/csra_black.png'
+import Cure from '../../../Images/client_logos/cure_black.png'
+import Dlh from '../../../Images/client_logos/dlh_black.png'
+import Gdit from '../../../Images/client_logos/gdit_black.png'
+import Govcio from '../../../Images/client_logos/govcio_black.png'
+import Honu from '../../../Images/client_logos/honu_black.png'
+import IronBow from '../../../Images/client_logos/ironBow_black.png'
+import Octo from '../../../Images/client_logos/octo_black.png'
+import SnapNurse from '../../../Images/client_logos/snapNurse_black.png'
 
 
 const Carousel = () => {

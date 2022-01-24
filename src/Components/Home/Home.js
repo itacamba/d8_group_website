@@ -1,11 +1,8 @@
 import React from 'react';
 import "./Home.css"
-import Chessboard from '../../Images/chessboard.png'
-// import CarouselHorizontal from './Home-Components/CarouselHorizontal/CarouselHorizontal';
 import CallToAction from './Home-Components/CallToAction/CallToAction';
 import UpcomingEvents from './Home-Components/UpcomingEvents/UpcomingEvents';
 import WhyUs from './Home-Components/WhyUs/WhyUs';
-// import Title from '../Shared/Title/Title'
 import Founder from './Home-Components/Founder/Founder';
 import Carousel from '../Shared/Carousel/Carousel';
 import Services from './Home-Components/Services/Services';
@@ -26,10 +23,6 @@ const Home = () => {
                     
                     </p>
                     <a href="/contact" className="action-btn">Get Started</a>
-                </div>
-                <div className="gradient-bottom"></div>
-                <div className="chessboard-img">
-                    <img src={Chessboard} alt="chessboard and queen" />
                 </div>
             </main>
             <div className="home-clients">

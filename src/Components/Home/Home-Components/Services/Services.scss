@@ -72,6 +72,11 @@
 
 @media screen and (max-width: 835px){
     .services {
+
+        .title-section {
+            padding-left: 5vw;
+        }
+
         .service-cols {
            flex-direction: column;
            border: none;
