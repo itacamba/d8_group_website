@@ -92,7 +92,7 @@ p {
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #48EDB8;
   border: none;
@@ -170,6 +170,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
+    background-color: #fff;
   }
   .chess-graphic {
     width: 100%;
@@ -411,10 +412,14 @@ img {
   display: none;
 }
 
+#home .absolute-text h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
 #home .absolute-text a {
   display: inline-block;
   padding-top: 2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #f1f1f1;
 }

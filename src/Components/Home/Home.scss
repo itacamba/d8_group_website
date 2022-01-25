@@ -208,12 +208,17 @@
         display: none;
     }
 
+    .absolute-text h2{ 
+        font-family: $secondary-font;
+    }
+
     .absolute-text a {
         display: inline-block;
         padding-top: 2rem;
-        font-family: $primary-font;
+        font-family: $secondary-font;
         font-weight: 600;
         color: $white;
+
     }
     .col-product {
         width: 40%;
