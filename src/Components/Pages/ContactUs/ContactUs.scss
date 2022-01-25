@@ -2,16 +2,11 @@
 @import '../../../Styles/index';
 
 .contact-us {
-    @extend .blue-gradient;
-    color: $white;
+    color: $black;
+    background-color: $tiffany;
 
     .title-section {
         padding-top: 4rem;
-    }
-
-    .title-section h4 {
-        font-weight: bold;
-        letter-spacing: .5px;
     }
 
     .contact-form{
@@ -25,28 +20,32 @@
     .contact-form input[type=text], input[type="email"], textarea {
         border: none;
         outline: none;
-        background-color: rgba(255,255,255,.3);
+        background-color: rgba(67, 161, 202, 0.267);
         padding: .8rem;
         width: 100%;
         margin-bottom: 1.5rem;
         color: $space-grey;
     }
 
+    textarea {
+        height: 100px;
+    }
+
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: $white;
+        color: $black;
         opacity: 1; /* Firefox */
       }
       
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $white;
+    color: $black;
     }
     
     ::-ms-input-placeholder { /* Microsoft Edge */
-    color: $white;
+    color: $black;
     }
 
     .checkbox-container {
-        background-color: rgba(255,255,255,.3);
+        background-color: rgba(67, 161, 202, 0.267);
         padding: .8rem;
         margin-bottom: 1.5rem;
     }

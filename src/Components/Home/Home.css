@@ -550,6 +550,9 @@ img {
     padding-top: 1rem;
     font-weight: bold;
   }
+  #home .upcoming-events-container {
+    padding-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
