@@ -110,7 +110,7 @@ p {
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #48EDB8;
   border: none;
@@ -188,12 +188,10 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
+    background-color: #fff;
   }
   .chess-graphic {
     width: 100%;
-  }
-  .chess-cols {
-    background-color: red;
   }
   .chess-info {
     width: 100%;
@@ -301,9 +299,9 @@ p {
 
 #nav .menu {
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  background-color: rgba(23, 145, 202, 0.623);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   height: 100vh;
   position: fixed;
   right: 0;
