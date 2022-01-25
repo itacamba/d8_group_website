@@ -13,7 +13,7 @@ const WhyUs = () => {
             title: 'Total $5B',
             content: `Total Federal bids our team members 
             have participated in and helped win in 
-            the past 3 years.`,
+            their career`,
         },
         {
             title: 'Experience',
@@ -27,7 +27,7 @@ const WhyUs = () => {
         },
         {
             title: 'Savings',
-            content: `$327K average yearly savings per client
+            content: `Over $300k average yearly savings per client
             utilizing business development and capture support.`,
         },
         {

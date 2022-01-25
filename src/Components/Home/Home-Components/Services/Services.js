@@ -49,7 +49,7 @@ const Services = () => {
             <div className="service-cols">
                 <div className="service-info">
                     <h2>Small Business Graduation</h2>
-                    <h4>Winning in the full an open market space</h4>
+                    <h4>Winning in the full and open market space</h4>
                     <p>
                         Over 80% of graduating small business fail in the 
                         full and open competitive market space. d8 Group builds your

@@ -5,7 +5,7 @@ import '../../SharedStyles/FlexGallery/FlexGallery.css'
 import Title from '../../Shared/Title/Title'
 import Reeba from '../../../Images/reeba.jpg';
 import Bill from '../../../Images/bill.jpeg';
-import Gregg from '../../../Images/gregg.jpeg';
+import Hayden from '../../../Images/hayden_pond.png';
 import Tj from '../../../Images/tj.jpeg';
 import Adam from '../../../Images/adam_ball.jpeg';
 import Sarah from '../../../Images/sarah_malone.jpeg';
@@ -42,21 +42,21 @@ const Leadership = () => {
         },
         {
             id: 3,
-            name: 'Gregg Greenfield',
-            title: 'Chief Growth Strategist',
-            url: 'https://www.linkedin.com/in/gregggreenfield/'
+            name: 'Hayden Pond',
+            title: 'Director of Strategic Growth',
+            url: 'https://www.linkedin.com/in/hayden-pond-2b7aa199/'
         },
         {
             id: 4,
-            name: 'TJ Magulick',
-            title: 'Principal of Business Operations',
-            url: 'https://www.linkedin.com/in/tj-magulick-7379521/'
-        },
-        {
-            id: 5,
             name: 'Adam Ball',
             title: 'Director of Strategic Growth',
             url: 'https://www.linkedin.com/in/adam-ball-12062952/'
+        },
+        {
+            id: 5,
+            name: 'TJ Magulick',
+            title: 'Principal of Business Operations',
+            url: 'https://www.linkedin.com/in/tj-magulick-7379521/'
         },
         {
             id: 6,
@@ -158,11 +158,11 @@ const Leadership = () => {
                                 : leader.id === 2?
                                 <img src={Bill} alt="William Kerr" />
                                 : leader.id === 3? 
-                                <img src={Gregg} alt="Gregg Greenfield" />
+                                <img src={Hayden} alt="Hayden Pond" />
                                 : leader.id === 4?
-                                <img src={Tj} alt="TJ Magilick" />
-                                : leader.id === 5?
                                 <img src={Adam} alt="Adam Ball" />
+                                : leader.id === 5?
+                                <img src={Tj} alt="TJ Magulick" />
                                 : leader.id === 6?
                                 <img src={Sarah} alt="Sarah Malone" />
                                 : leader.id === 8?
