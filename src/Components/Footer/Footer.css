@@ -79,15 +79,6 @@ p {
   }
 }
 
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-}
-
 .box-shadow-sharp {
   -webkit-box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
   box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
@@ -198,14 +189,11 @@ p {
             flex-direction: column;
     border: none;
   }
-  .chess-cols:nth-child(even) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   .chess-graphic {
     width: 100%;
+  }
+  .chess-cols {
+    background-color: red;
   }
   .chess-info {
     width: 100%;

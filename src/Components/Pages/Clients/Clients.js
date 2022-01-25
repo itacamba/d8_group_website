@@ -268,7 +268,7 @@ const Clients = () => {
     return (
         <div className='clients'>
             <PageHeading heading="Our Trusted Clients" page="Clients"/>
-            <Title heading="our clients" subtitle="d8 group's trusted clients"/>
+            <Title heading="our clients" title="d8 group's trusted clients"/>
             <div className="flex-gallery">
                 {
                     clientsList.map((client, i) => 

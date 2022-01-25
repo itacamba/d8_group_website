@@ -145,7 +145,7 @@ const Leadership = () => {
     ]
     return (
         <div className="leadership">
-            <PageHeading heading="Group Leadership" page="Leadership"/>
+            <PageHeading heading="d8 Group Leadership" page="Leadership"/>
             <Title heading="leaders and advisors" title="The d8 Group team" />
             <div className="flex-gallery">
                 {

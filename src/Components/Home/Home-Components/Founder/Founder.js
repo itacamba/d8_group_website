@@ -5,7 +5,7 @@ import './Founder.css'
 const Founder = () => {
     return (
         <div className='founder'>
-            <Title heading="the founder" title="A word from our founder" paragraph="Reeba Magulick from d8 Group."/>
+            <Title heading="the founder" title="A word from our founder Reeba Magulick" />
             <div className="video">
                 <iframe  src="https://www.youtube.com/embed/bIoLb8hQAhc" title="d8 Group Welcome Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>

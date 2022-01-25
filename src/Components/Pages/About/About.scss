@@ -8,6 +8,20 @@
         @extend .section-padding-top-bottom;
         background-color: $light-tiff;
     }
+
+    .action-btn {
+        @extend .main-button;
+        background-color: transparent;
+        border: 3px solid $black;
+        cursor: pointer;
+        transition:  .3s ease-in-out;
+    }
+
+    .action-btn:hover {
+        background-color: $tiffany;
+        border: 3px solid $tiffany;
+        transition:  .3s ease-in-out;
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -15,6 +29,9 @@
         > p {
            max-width: 100%;
         }
-        
+    }
+
+    .chess-cols.best-practices{
+        flex-direction: column-reverse;
     }
 }

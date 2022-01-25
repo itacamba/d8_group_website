@@ -92,7 +92,7 @@ p {
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #48EDB8;
   border: none;
@@ -170,12 +170,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-  }
-  .chess-cols:nth-child(even) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    background-color: #fff;
   }
   .chess-graphic {
     width: 100%;

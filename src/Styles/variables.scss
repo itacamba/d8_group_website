@@ -135,7 +135,7 @@ $yellow: #EDCF34;
     display: inline-block;
     margin-top: 2rem;
     padding: 1rem 2rem;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-weight: bold;
     background-color: $green;
     border: none;
@@ -212,10 +212,7 @@ $yellow: #EDCF34;
     .chess-cols {
         flex-direction: column;
         border: none;
-    }
-
-    .chess-cols:nth-child(even) {
-        flex-direction: column-reverse;
+        background-color: #fff;
     }
 
     .chess-graphic {

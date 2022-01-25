@@ -171,14 +171,11 @@ p {
             flex-direction: column;
     border: none;
   }
-  .chess-cols:nth-child(even) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   .chess-graphic {
     width: 100%;
+  }
+  .chess-cols {
+    background-color: red;
   }
   .chess-info {
     width: 100%;
@@ -211,7 +208,7 @@ img {
 .page-heading {
   background-image: url(../../../Images/chess_heading.png);
   background-size: cover;
-  height: 300px;
+  height: 35vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -255,8 +252,9 @@ img {
 
 @media screen and (max-width: 700px) {
   .page-heading {
-    background-image: url(../../../Images/page_heading.jpeg);
-    background-position: bottom;
+    height: 28vh;
+    background-image: url(../../../Images/page_heading.jpg);
+    background-position: top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

@@ -2,8 +2,7 @@
 @import '../../../Styles/index';
 
 .clients {
- @extend .blue-gradient;
- color: $white;
+ background-color: $tiffany;
 
  .title-section{
      padding-top: 4rem;
@@ -19,7 +18,7 @@
  }
 
  .gallery-card {
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(67, 161, 202, 0.267);
     border-radius: 5px;
     padding-top: 1rem;
     padding-bottom: 1rem;

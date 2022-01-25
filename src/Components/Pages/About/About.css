@@ -76,7 +76,7 @@ p {
   box-shadow: 0px 5px 12px -2px rgba(140, 140, 140, 0.82);
 }
 
-.main-button {
+.main-button, .about-us .action-btn {
   text-align: center;
   background-color: #88DBFF;
   font-family: "Montserrat", sans-serif;
@@ -170,12 +170,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-  }
-  .chess-cols:nth-child(even) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    background-color: #fff;
   }
   .chess-graphic {
     width: 100%;
@@ -212,9 +207,30 @@ img {
   background-color: #D5F1FE;
 }
 
+.about-us .action-btn {
+  background-color: transparent;
+  border: 3px solid #13181C;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.about-us .action-btn:hover {
+  background-color: #88DBFF;
+  border: 3px solid #88DBFF;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
 @media screen and (max-width: 700px) {
   .about-us > p {
     max-width: 100%;
+  }
+  .chess-cols.best-practices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=About.css.map */

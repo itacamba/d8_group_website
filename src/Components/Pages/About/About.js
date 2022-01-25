@@ -27,13 +27,16 @@ const About = () => {
                         for new entrants while helping existing players with 
                         their critical business development and capture needs.
                     </p>
+                    <a className="action-btn" href="/contact">
+                        Get Started
+                    </a>
                 </div>
                 <div className="chess-graphic">
                     <img src={chess3} alt="chess" />
                 </div>
             </div>
 
-            <div className="chess-cols">
+            <div className="chess-cols best-practices">
                 <div className="chess-graphic">
                     <img src={chess4} alt="chess" />
                 </div>
@@ -54,6 +57,9 @@ const About = () => {
                         Capture teams working exclusively for you on your accepted bids 
                         without the hiring, training, retention and overhead headaches.
                     </p>
+                    <a className="action-btn" href="/contact">
+                        Get Started
+                    </a>
                 </div>
             </div>
             <WhyUs />

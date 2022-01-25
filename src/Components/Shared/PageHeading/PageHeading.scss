@@ -5,7 +5,7 @@
 .page-heading {
     background-image: url(../../../Images/chess_heading.png);
     background-size: cover;
-    height: 300px;
+    height: 35vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -45,8 +45,9 @@
 @media screen and (max-width: 700px){
 
     .page-heading {
-        background-image: url(../../../Images/page_heading.jpeg);
-        background-position: bottom;
+        height: 28vh;
+        background-image: url(../../../Images/page_heading.jpg);
+        background-position: top;
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;

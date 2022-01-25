@@ -61,15 +61,6 @@ p {
   }
 }
 
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-}
-
 .box-shadow-sharp {
   -webkit-box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
   box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
@@ -101,7 +92,7 @@ p {
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #48EDB8;
   border: none;
@@ -118,7 +109,7 @@ p {
   padding-right: 5vw;
 }
 
-.blue-gradient, .clients {
+.blue-gradient {
   background: #45bedc;
   background: -webkit-gradient(linear, left top, right top, from(#45bedc), to(#18a3df));
   background: linear-gradient(90deg, #45bedc 0%, #18a3df 100%);
@@ -179,12 +170,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-  }
-  .chess-cols:nth-child(even) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    background-color: #fff;
   }
   .chess-graphic {
     width: 100%;
@@ -218,7 +204,7 @@ img {
 }
 
 .clients {
-  color: #f1f1f1;
+  background-color: #88DBFF;
 }
 
 .clients .title-section {
@@ -235,7 +221,7 @@ img {
 }
 
 .clients .gallery-card {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(67, 161, 202, 0.267);
   border-radius: 5px;
   padding-top: 1rem;
   padding-bottom: 1rem;
