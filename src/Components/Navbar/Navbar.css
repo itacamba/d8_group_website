@@ -299,7 +299,7 @@ p {
 
 #nav .menu {
   width: 50%;
-  background-color: rgba(23, 145, 202, 0.623);
+  background-color: rgba(56, 177, 233, 0.787);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   height: 100vh;
@@ -361,7 +361,7 @@ p {
   width: 40px;
   height: 2px;
   position: absolute;
-  background-color: #88DBFF;
+  background-color: #13181C;
 }
 
 #nav .x-line:first-child.show {
@@ -576,7 +576,8 @@ p {
 
 #nav .menu ul li a {
   font-size: 2rem;
-  color: #f1f1f1;
+  font-weight: 600;
+  color: #13181C;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -610,9 +611,6 @@ p {
   }
   #nav .menu {
     width: 80%;
-  }
-  #nav .menu ul li a {
-    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */
