@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHeading from '../../Shared/PageHeading/PageHeading';
 import SecondEvent from '../../../Images/event-poster.jpeg'
+import FirstEvent from '../../../Images/event_poster_1.jpeg'
 import './Events.css'
 
 const Events = () => {
@@ -97,7 +98,7 @@ const Events = () => {
                 </div>
 
                 <div className="event-img">
-                    <img src={SecondEvent} alt="Event Poster" />
+                    <img src={FirstEvent} alt="Event Poster" />
                 </div>
             </div>
         </div>

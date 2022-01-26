@@ -3,11 +3,12 @@
 @import '../../../Styles/index';
 
 .two-col{
-    @extend .section-padding-top-bottom;
+    @extend .pad-top-bot;
     padding-left: 5vw;
     padding-right: 5vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .two-col:nth-child(odd){
@@ -16,21 +17,16 @@
     color: $white;
 }
 
-.two-col:nth-child(even) .col-img{
-    @extend .box-shadow-blur ;
+.two-col:nth-child(even) .col{
+    @extend .dark-shadow;
 }
-
+.col {
+    width: 48%;
+}
 .col img {
     width: 100%;
 }
 
-.col-img {
-    width: 48%;
-}
-
-.col-img img{
-    width: 100%;
-}
 
 .col-info {
     width: 48%;
@@ -56,31 +52,17 @@
     margin-bottom: .5rem;
 }
 
-
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 800px){
     .two-col {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     .two-col:nth-child(odd){
         flex-direction: column;
     }
 
-    .col-img{
-        width: 70%;
-    }
-
-    .col-info {
-        margin-top: 2rem;
-        width: 70%;
-    }
-        
-}
-
-@media screen and (max-width: 800px){
-    .col-img{
+    .col{
         width: 100%;
     }
 

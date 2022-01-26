@@ -2,7 +2,6 @@ import React from 'react';
 import Logo from '../../Images/logo.png'
 import d8 from '../../Images/d8_graphic.png'
 import './Footer.css'
-import '../SharedStyles/Two-Col/TwoCol.css'
 
 const Footer = () => {
     const date =  new Date().getFullYear();

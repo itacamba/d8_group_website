@@ -2,9 +2,13 @@
 @import '../../../../Styles/index';
 
 .founder{
-    @extend .section-padding-top-bottom;
+    @extend .pad-top-bot;
     background-color: $light-tiff;
     
+    .title-section {
+        padding-top: 0;
+    }
+
     h2 {
         color: $black;
     }

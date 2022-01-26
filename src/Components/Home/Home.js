@@ -7,6 +7,7 @@ import Founder from './Home-Components/Founder/Founder';
 import Carousel from '../Shared/Carousel/Carousel';
 import Services from './Home-Components/Services/Services';
 import Title from '../Shared/Title/Title';
+import PodcastTeaser from '../../Images/podcast-bobby-saxon.png';
 
 const Home = () => {
 
@@ -26,11 +27,28 @@ const Home = () => {
                 </div>
             </main>
             <div className="home-clients">
-                <Title heading="our clients" /> 
+                <Title heading="some of our clients" /> 
                 <Carousel />
             </div>
             <Services />
             <CallToAction/>
+            <div className="home-podcast">
+                <Title heading="podcast season 2" title="The New Way To Win"/>
+                <div className="two-col">
+                        <div className="col">
+                            <img src={PodcastTeaser} alt="Bobby Saxon and Reeba Magulick" />
+                        </div>
+                        <div className="col-info">
+                            <h2>Featuring Bobby Saxon, Deputy CIO CMS</h2>
+                            <p>Welcome to Season 2 of "A New Way to Win!" To kick off season 2, we are honored to speak with Retired Colonel Bobby Saxon, the Acting Director for Emergency Preparedness & Response Operations, Centers for Medicare and Medicaid Services (CMS). In this episode, Bobby discusses what you need to know about Medicare Modernization.</p>
+                            
+                            <div className="podcast-btns">
+                                <a href='https://www.youtube.com/watch?v=x-i94Hz8bzk' className='action-btn'>Watch Now!</a>
+                                <a href='/podcast' className='action-btn'>All Episodes</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
             <Founder/>
             <WhyUs/>
             <UpcomingEvents/>

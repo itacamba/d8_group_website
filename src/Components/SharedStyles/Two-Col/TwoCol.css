@@ -66,12 +66,12 @@ p {
   box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
 }
 
-.box-shadow-blur, .two-col:nth-child(even) .col-img {
+.box-shadow-blur {
   -webkit-box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
   box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
 }
 
-.dark-shadow, .green-button {
+.dark-shadow, .green-button, .two-col:nth-child(even) .col {
   -webkit-box-shadow: 0px 5px 12px -2px rgba(140, 140, 140, 0.82);
   box-shadow: 0px 5px 12px -2px rgba(140, 140, 140, 0.82);
 }
@@ -92,14 +92,14 @@ p {
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #48EDB8;
   border: none;
   cursor: pointer;
 }
 
-.section-padding-top-bottom, .two-col {
+.pad-top-bot, .two-col {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -170,12 +170,10 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
+    background-color: #fff;
   }
   .chess-graphic {
     width: 100%;
-  }
-  .chess-cols {
-    background-color: red;
   }
   .chess-info {
     width: 100%;
@@ -214,6 +212,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .two-col:nth-child(odd) {
@@ -225,15 +226,11 @@ img {
   color: #f1f1f1;
 }
 
-.col img {
-  width: 100%;
-}
-
-.col-img {
+.col {
   width: 48%;
 }
 
-.col-img img {
+.col img {
   width: 100%;
 }
 
@@ -261,7 +258,7 @@ img {
   margin-bottom: .5rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .two-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -270,9 +267,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .two-col:nth-child(odd) {
     -webkit-box-orient: vertical;
@@ -280,17 +274,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .col-img {
-    width: 70%;
-  }
-  .col-info {
-    margin-top: 2rem;
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .col-img {
+  .col {
     width: 100%;
   }
   .col-info {

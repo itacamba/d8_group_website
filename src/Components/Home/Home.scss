@@ -69,113 +69,62 @@
         margin-bottom: 0;
     }
 
-    .horizontal-carousel {
-        padding: 0;
+    // home podcast 
+
+    .home-podcast {
+        @extend .pad-top-bot;
+    }
+
+    .home-podcast .title-section {
+        padding-top: 0;
+    }
+
+    .home-podcast .two-col{
+        @extend .two-col;
+        @extend .pad-sides;
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: center
+    }
+
+    .home-podcast .two-col .col img{
+        @extend .dark-shadow;
+    }
+
+    .home-podcast .podcast-btns {
         display: flex;
-        overflow-x: auto; // makes it scroll horizontally
-        margin-top: 70px;
-        margin-left: 10%;
-        -ms-overflow-style: none;  /* IE and Edge */ // removes scrollbar
-        scrollbar-width: none;  /* Firefox */ // removes scrollbar
     }
 
-    .horizontal-carousel::-webkit-scrollbar {
-        display: none;
-    }
-
-    .arrow-right {
-        position: absolute;
-        left: 5%;
-        top: 60%;
-        color: $light-grey;
-    }
-
-    .arrow-right::after {
-        content: '\2192';
-        /* little make up */
-        font-size: 2em;
-        /* whatever needed*/
-        padding: 0 0.5em;
-        /* whatever needed*/
-        vertical-align: -0.1em;
-        /* whatever needed*/
-    }
-
-    .carousel-card {
-        min-width: 350px; // makes it 350px on a display flex 
-        margin-right: 30px;
-        padding: 2.5em;
-        padding-top: 2.8em;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        position: relative; // for the card-circle-icon to position
-        background-image: linear-gradient(
-            180deg,#fff,hsla(0,0%,100%,0));
-        transition: all .1s ease-in-out; // makes transition work on hover-off
-    }
-    
-    .carousel-card:hover {
-        @extend .box-shadow-sharp;
-        transition: all .1s ease-in-out; 
-    }
-
-    .card-circle-icon {
-        width: 80px;
-        height: 80px;
-        border-radius: 50px;
-        position: absolute;
-        top:  -45px;
-        left: 2.5em; // same as .carousel-card padding-left
-        background-color: #fff;
-        @extend .box-shadow-blur;
-    }
-
-    .circle-icon-img {
-        height: 50px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .circle-icon-img img{
-        height: 100%;
-    }
-
-    .carousel-card h2 {
-        color: $tiffany;
-        margin-top: 20px;
-    }
-
-    .carousel-card h3 {
-        margin-top: 1rem;
-    }
-
-    .carousel-card p {
-        margin-top: 1rem;
-    }
-
-    .carousel-card button {
-        display: block;
-        margin: 0 auto;
-        border: none;
-        outline: none;
-        background: none;
-        font-family: $primary-font;
-        font-weight: 300;
-        font-size: $fs-extra-small;
-        color: $light-grey;
-        margin-top: 2rem;
-        cursor: pointer;
-    }
-
-    .main-button {
+    .home-podcast .action-btn {
         @extend .main-button;
+        background-color: transparent;
+        border: 3px solid $black;
     }
+
+    .home-podcast .action-btn:hover {
+        background-color: $tiffany;
+        border: 3px solid $tiffany;
+        transition: .3s ease-in-out;
+    }
+
+    .home-podcast .action-btn:first-child {
+        background-color: $tiffany;
+        border: 3px solid $tiffany;
+        margin-right: 10px;
+        transition: .3s ease-in-out;
+    }
+
+    .home-podcast .action-btn:first-child:hover {
+        background-color: transparent;
+        border: 3px solid $black;
+        transition: .3s ease-in-out;
+    }
+
+    // end home podcast
 
     .upcoming-events-container {
         width: 100%;
-        @extend .section-padding-top-bottom;
+        @extend .pad-top-bot;
         padding-bottom: 0;
     }
 
@@ -187,6 +136,7 @@
         padding-top: 2rem;
     }
 
+    // .col-img belongs to 'Upcoming Events'
     .col-img {
         width: 60%;
         position: relative; // to make .absolute-text work
@@ -232,7 +182,7 @@
     // Why Us
     .why-us {
         background-color: $black;
-        @extend .section-padding-top-bottom;
+        @extend .pad-top-bot;
         color: $white;
     }
     // End Why Us
@@ -309,6 +259,12 @@
         }
     }
 }
+
+// @media screen and (max-width: 850px){
+//     // home podcast
+
+//     // end home podcast
+// }
 
 @media screen and (max-width: 750px){
     #home {

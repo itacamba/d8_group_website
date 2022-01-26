@@ -10,8 +10,8 @@ import Title from '../../../Shared/Title/Title';
 const WhyUs = () => {
     const skills = [
         {
-            title: 'Total $5B',
-            content: `Total Federal bids our team members 
+            title: 'Total Wins',
+            content: `Total $5B Federal bids our team members 
             have participated in and helped win in 
             their career`,
         },

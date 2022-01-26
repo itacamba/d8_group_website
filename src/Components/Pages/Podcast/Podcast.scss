@@ -3,7 +3,12 @@
 
 .podcast {
 
-    .green-btn {
-        @extend .green-button;
+    .action-btn {
+        @extend .main-button;
+        @extend .dark-shadow;
+    }
+
+    .two-col:nth-child(odd) .action-btn {
+        box-shadow: none;
     }
 }

@@ -97,13 +97,13 @@ const Podcast = () => {
                 {
                     guestList.map((guest, i) =>
                      <div className="two-col" key={i}>
-                        <div className="col-img">
+                        <div className="col">
                             <img src={guest.img} alt={guest.alt} />
                         </div>
                         <div className="col-info">
                             <h2>{guest.title}</h2>
                             <p>{guest.info}</p>
-                            <a href={guest.link} className='green-btn'>Watch Full Episode!</a>
+                            <a href={guest.link} className='action-btn'>Watch Full Episode!</a>
                         </div>
                     </div>
 

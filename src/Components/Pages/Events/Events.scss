@@ -3,7 +3,7 @@
 
 .events {
     .event-container{
-        @extend .section-padding-top-bottom;
+        @extend .pad-top-bot;
         padding-left: 5vw;
         padding-right: 5vw;
         display: flex;

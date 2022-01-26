@@ -5,7 +5,7 @@
 // .chess-cols have been imported from ./variables
 .about-us {
     .why-us{
-        @extend .section-padding-top-bottom;
+        @extend .pad-top-bot;
         background-color: $light-tiff;
     }
 
