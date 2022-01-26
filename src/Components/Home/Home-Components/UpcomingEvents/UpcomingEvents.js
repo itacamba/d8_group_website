@@ -5,7 +5,7 @@ import Title from '../../../Shared/Title/Title'
 const UpcomingEvents = () => {
     return (
         <div className='upcoming-events-container'>
-            <Title heading="upcoming events" title="Strategies & opportunities"/>
+            <Title heading="upcoming events" title="Strategies & Opportunities"/>
             
             <div className="flex-container">
                 <div className="col-img">

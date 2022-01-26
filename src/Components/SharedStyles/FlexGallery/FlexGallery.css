@@ -92,14 +92,14 @@ p {
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #48EDB8;
   border: none;
   cursor: pointer;
 }
 
-.section-padding-top-bottom {
+.pad-top-bot {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -170,12 +170,10 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
+    background-color: #fff;
   }
   .chess-graphic {
     width: 100%;
-  }
-  .chess-cols {
-    background-color: red;
   }
   .chess-info {
     width: 100%;
@@ -232,7 +230,7 @@ img {
 .gallery-card span {
   font-size: 2.5rem;
   font-family: "Playfair Display", serif;
-  margin-right: 5px;
+  margin-right: 7px;
   color: #88DBFF;
 }
 

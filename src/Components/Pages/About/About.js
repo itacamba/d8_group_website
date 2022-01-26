@@ -17,7 +17,7 @@ const About = () => {
                     <p>
                         d8 Group was founded to help firms 
                         interested in doing business with the 
-                        Federal Government find a New Way to Win 
+                        Federal Government. Find a New Way to Win 
                         by re-defining the government contracts 
                         business development and capture management process.
                     </p>

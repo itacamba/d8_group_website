@@ -1,13 +1,13 @@
 import React from 'react';
 import './Services.css'
 // import chess1 from '../../../../Images/chess_1.jpeg'
-import chess1 from '../../../../Images/chess_1_blue.png'
+import chess1 from '../../../../Images/chess_1_light.png'
 // import chess2 from '../../../../Images/chess_2.jpeg'
-import chess2 from '../../../../Images/chess_2_blue.png'
+import chess2 from '../../../../Images/chess_2_light.png'
 // import chess3 from '../../../../Images/chess_3.jpeg'
-import chess3 from '../../../../Images/chess_3_blue.png'
+import chess3 from '../../../../Images/chess_3_light.png'
 // import chess4 from '../../../../Images/chess_4.jpeg'
-import chess4 from '../../../../Images/chess_4_blue.png'
+import chess4 from '../../../../Images/chess_4_light.png'
 import Title from '../../../Shared/Title/Title';
 
 const Services = () => {
