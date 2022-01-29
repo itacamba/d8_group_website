@@ -1,5 +1,6 @@
 {
   "name": "d8_group_website",
+  "homepage": "http://d8group.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

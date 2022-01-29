@@ -31,7 +31,7 @@ const Leadership = () => {
         {
             id: 1,
             name: 'Reeba Magulick',
-            title: 'Founding Founder',
+            title: 'Founding Partner',
             url: 'https://www.linkedin.com/in/reeba-magulick/'
         },
         {  
