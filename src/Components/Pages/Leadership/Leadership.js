@@ -21,8 +21,8 @@ import Tom from '../../../Images/tom_giroir.jpeg';
 import Jason from '../../../Images/jason_cullum.jpeg';
 import Les from '../../../Images/les_mcfarling.jpeg';
 import Ken from '../../../Images/ken_algood.jpeg';
-import Robin from '../../Images/robin_kelly.jpg';
-import Carla from '../../Images/carla_sah.jpg';
+import Robin from '../../../Images/robin_kelly.jpg';
+import Carla from '../../../Images/carla_sah.jpg';
 
 
 
