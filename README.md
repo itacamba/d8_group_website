@@ -13,3 +13,8 @@
 5. Copy and paste the 'Navbar' folder in the 'Components' folder.
 6. Copy the App.js that contains the router. 
 
+# How to make changes and re-deploy to Godaddy
+1. Make changes and push to github
+2. Make sure to delete old 'build' file
+3. Create a new build file by running 'npm run build'
+4. Use that build folder to upload to Godaddy's > CPanel > public_html folder.
