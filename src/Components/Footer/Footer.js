@@ -70,13 +70,13 @@ const Footer = () => {
                             </div>
                             <div className='footer-info'>
                                 <i className="fas fa-envelope"></i>
-                                <p>ops@d8group.com</p>
+                                <p>ocps@d8group.com</p>
                             </div>
                             <div className='footer-info'>
                                 <i className="fas fa-map-marked-alt"></i>
                                 <p>11921 Freedom Dr.<br></br>
                                     Suite 550<br></br>
-                                    Reston, VA 2019</p>
+                                    Reston, VA 20190</p>
                             </div>
                         </div>
                     </div>
