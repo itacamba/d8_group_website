@@ -17,4 +17,7 @@
 1. Make changes and push to github
 2. Make sure to delete old 'build' file
 3. Create a new build file by running 'npm run build'
+4. In CPanel, the only files not to delete are the following:
+    - .htaccess
+    - 404.shtml
 4. Use that build folder to upload to Godaddy's > CPanel > public_html folder.

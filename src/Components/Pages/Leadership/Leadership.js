@@ -38,7 +38,7 @@ const Leadership = () => {
         },
         {  
             name: 'William Kerr',
-            title: 'Senior Capture Strategist',
+            title: 'Director of Strategic Growth',
             url: 'https://www.linkedin.com/in/william-kerr-4a975258/',
             img: Bill,
         },
