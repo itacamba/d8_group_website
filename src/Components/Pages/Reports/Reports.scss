@@ -1,0 +1,18 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/index';
+
+.reports {
+
+    .action-btn {
+        @extend .main-button;
+        @extend .dark-shadow;
+    }
+
+    .two-col:nth-child(odd) .action-btn {
+        box-shadow: none;
+    }
+
+    .col-info {
+        margin-top: 30px;
+    }
+}

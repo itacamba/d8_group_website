@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './Styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Client from 'shopify-buy';
+
+const client = Client.buildClient({
+  storefrontAccessToken: 'ea5f9e9b522e55328f4f471de7488928',
+  domain: 'd8groupstore.myshopify.com'
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App client={client}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

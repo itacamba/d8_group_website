@@ -12,8 +12,9 @@ import ContactUs from './Components/Pages/ContactUs/ContactUs';
 import Events from './Components/Pages/Events/Events';
 import Podcast from './Components/Pages/Podcast/Podcast';
 import Clients from './Components/Pages/Clients/Clients';
+import Reports from './Components/Pages/Reports/Reports';
 
-function App() {
+function App({client}) {
   return (
     <Router>
 
@@ -26,6 +27,7 @@ function App() {
             <Route exact path="/contact" element={<ContactUs />} />
             <Route exact path="/events" element={<Events />} />
             <Route exact path="/podcast" element={<Podcast />} />
+            <Route exact path="/reports" element={<Reports  client={client}/>} />
           </Routes>
           <Footer/>
 
