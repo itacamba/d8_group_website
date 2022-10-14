@@ -4,6 +4,7 @@
     2. Command: npm i node-sass --save-dev
 - React Router Dom
     1. Command: npm i react-router-dom --save-dev
+- Shopify SDK
 
 # How to reuse components
 1. Universal Styles are located in the 'Styles' folder, the index.scss and variables.scss files contain the necessary styles to get started.

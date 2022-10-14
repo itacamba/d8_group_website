@@ -143,12 +143,6 @@ const Leadership = () => {
             title: 'Mental Health Expert',
             url: 'https://www.linkedin.com/in/les-mcfarling-84a598140/',
             img: Les
-        },
-        {
-            name: 'Ken Allgood',
-            title: 'Federal Health Subject Matter Expert',
-            url: 'https://www.linkedin.com/in/kenallgood/',
-            img: Ken
         }
     ]
     return (
